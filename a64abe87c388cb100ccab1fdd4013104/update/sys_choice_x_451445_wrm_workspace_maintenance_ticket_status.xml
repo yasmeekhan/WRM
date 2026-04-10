@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="ticket_status" table="x_451445_wrm_workspace_maintenance" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>ticket_status</element>
+            <name>x_451445_wrm_workspace_maintenance</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 23:23:18</sys_created_on>
+            <sys_id>a55576a7c3c4cf100ccab1fdd401312e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ticket_status</sys_name>
+            <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+            <sys_update_name>sys_choice_x_451445_wrm_workspace_maintenance_ticket_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 23:23:18</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ticket_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_451445_wrm_workspace_maintenance</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 23:23:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c565f6a7c3c4cf100ccab1fdd401312d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 23:23:42</sys_updated_on>
+            <value>closed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ticket_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_451445_wrm_workspace_maintenance</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-10 23:23:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa4536a7c3c4cf100ccab1fdd40131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-10 23:23:18</sys_updated_on>
+            <value>open</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
