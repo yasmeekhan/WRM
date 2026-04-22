@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-09 11:37:51</sys_created_on>
-        <sys_id>5b2a87c7c30ccb100ccab1fdd4013174</sys_id>
         <sys_name>Max occupancy</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
         <sys_policy/>

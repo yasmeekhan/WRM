@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_451445_wrm_reservation_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_451445_wrm_reservation_tracker">reservation_statusCHANGESTOchecked-out^EQ<item display_value="Checked-out" endquery="false" field="reservation_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="checked-out"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BR Check-Out Notification</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+if (current.reservation_status == 'Checked-out' && previous.reservation_status != 'Checked-out') {
+
+        gs.eventQueue(
+            'workspace.checked_out', // Event name
+            current,                 // Record
+            current.assigned_to,     // parm1 (recipient)
+            current.number          // parm2 (record number)
+        );
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 08:30:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7421cc7c35483100ccab1fdd401315e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BR Check-Out Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sys_script_e7421cc7c35483100ccab1fdd401315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 08:31:26</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7421cc7c35483100ccab1fdd401315e"/>
+</record_update>

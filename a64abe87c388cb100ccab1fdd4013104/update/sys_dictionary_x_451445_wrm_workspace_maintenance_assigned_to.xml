@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 23:33:20</sys_created_on>
-        <sys_id>d277b6ebc3c4cf100ccab1fdd40131cc</sys_id>
         <sys_name>Assigned to</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
         <sys_policy/>

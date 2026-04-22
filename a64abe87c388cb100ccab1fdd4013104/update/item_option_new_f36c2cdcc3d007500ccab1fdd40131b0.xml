@@ -45,7 +45,7 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>purpose_of_visit</name>
+        <name>description</name>
         <not_available_conversation>false</not_available_conversation>
         <order>600</order>
         <post_insert_script/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-12 21:21:08</sys_created_on>
         <sys_id>f36c2cdcc3d007500ccab1fdd40131b0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Purpose of visit</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>description</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>item_option_new_f36c2cdcc3d007500ccab1fdd40131b0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-12 21:26:22</sys_updated_on>
+        <sys_updated_on>2026-04-19 11:46:29</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

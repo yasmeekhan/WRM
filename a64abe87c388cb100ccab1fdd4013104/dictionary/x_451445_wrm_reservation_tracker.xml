@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=false" audit="true" db_object_id="1324c227c340cf100ccab1fdd4013132" extends="task" label="Reservation Tracker" max_length="40" name="x_451445_wrm_reservation_tracker" type="collection">
+        <element label="Start date/time" max_length="40" name="start_date_time" type="glide_date_time"/>
+        <element label="Reserved for" max_length="32" name="reserved_for" reference="sys_user" type="reference"/>
+        <element choice="1" label="Reservation status" max_length="40" name="reservation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Checked-in" sequence="20" value="checked-in"/>
+                <element inactive_on_update="false" label="Checked-out" sequence="30" value="checked-out"/>
+                <element inactive_on_update="false" label="No-show" sequence="50" value="no-show"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="40" value="cancelled"/>
+                <element inactive_on_update="false" label="Pending check-in" sequence="10" value="pending_check-in"/>
+            </choice>
+        </element>
+        <element label="Request number" max_length="32" name="request_number" reference="sc_req_item" type="reference"/>
+        <element label="End date/time" max_length="40" name="end_date_time" type="glide_date_time"/>
+        <element label="Additional notes" max_length="1000" name="additional_notes" type="string"/>
+        <element label="Workspace" max_length="32" name="workspace" reference="x_451445_wrm_workspace_options" type="reference"/>
+    </element>
+</database>

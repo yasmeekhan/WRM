@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>false</active>
+        <application display_value="Workspace Reservation Management">01c25b0bc34ccb100ccab1fdd40131e7</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_451445_wrm_reservation_tracker">state=2^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Closed</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_451445_wrm_reservation_tracker</name>
+        <order>70</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_451445_wrm.wrm_agent</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 21:59:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>37d1eaefc304cf100ccab1fdd401316b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sys_app_module_37d1eaefc304cf100ccab1fdd401316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-12 23:08:19</sys_updated_on>
+        <timeline_page/>
+        <title>Closed</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</application>
+        <file_path/>
+        <instance_id>357f38c1fb3f4e50363cf633beefdce9</instance_id>
+        <instance_name>dev284713</instance_name>
+        <name>sys_app_module_37d1eaefc304cf100ccab1fdd401316b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>false</active><application display_value="Workspace Reservation Management">01c25b0bc34ccb100ccab1fdd40131e7</application><assessment/><device_type/><filter table="x_451445_wrm_reservation_tracker">state=2^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Closed</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_451445_wrm_reservation_tracker</name><order>70</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_451445_wrm.wrm_agent</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-10 21:59:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>37d1eaefc304cf100ccab1fdd401316b</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Closed</sys_name><sys_overrides/><sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope><sys_update_name>sys_app_module_37d1eaefc304cf100ccab1fdd401316b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-12 23:08:19</sys_updated_on><timeline_page/><title>Closed</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1317016</payload_hash>
+        <record_name>Closed</record_name>
+        <reverted_from/>
+        <source>e4a5eb2dc35c43100ccab1fdd4013163</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-12 23:08:19</sys_created_on>
+        <sys_id>d91509d0c3d407500ccab1fdd4013153</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>19d83f3ff290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 08:02:10</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d91509d066d40750b152be8947441a52</update_guid>
+        <update_guid_history>d91509d066d40750b152be8947441a52:1317016,f334495059d407505da7c28711df269c:-217830154,2ea1cdd8df940750741613339fae7f7b:-912781865,8d61c1d83e940750669e81985af7adbf:11086825,1f50455817940750760bc02c22aa2482:-912781865,86fff41871940750b399688b96b88429:1317016,1d8f78d4c9940750b50a6e785e70fdbb:-912781865,438e7854df94075099925c278883e432:1299087961,d692f81c031407504c06aeacaa77f7b3:-912781865,a5c6e26b5344cf108e2c1c6bfbfcb434:-1582364080,7d32aeef9704cf101a7dff07facd0868:-1518866300</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Closed">d9c68d94c3d407500ccab1fdd40131c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-12 23:15:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>00e40b680c7c4ebcafe7b10db783c421</sys_id>
+        <sys_metadata>37d1eaefc304cf100ccab1fdd401316b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Closed</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_scope_delete display_value="">537389c6c0d04727832ef30c60e8d4e9</sys_scope_delete>
+        <sys_update_name>sys_app_module_37d1eaefc304cf100ccab1fdd401316b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_37d1eaefc304cf100ccab1fdd401316b">d91509d0c3d407500ccab1fdd4013153</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-12 23:15:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
