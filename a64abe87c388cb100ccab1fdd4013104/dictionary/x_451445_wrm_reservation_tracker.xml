@@ -4,11 +4,11 @@
         <element label="Reserved for" max_length="32" name="reserved_for" reference="sys_user" type="reference"/>
         <element choice="1" label="Reservation status" max_length="40" name="reservation_status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Checked-in" sequence="20" value="checked-in"/>
-                <element inactive_on_update="false" label="Checked-out" sequence="30" value="checked-out"/>
-                <element inactive_on_update="false" label="No-show" sequence="50" value="no-show"/>
+                <element inactive_on_update="false" label="Checked-in" sequence="20" value="checked_in"/>
+                <element inactive_on_update="false" label="Checked-out" sequence="30" value="checked_out"/>
+                <element inactive_on_update="false" label="No-show" sequence="50" value="no_show"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="40" value="cancelled"/>
-                <element inactive_on_update="false" label="Pending check-in" sequence="10" value="pending_check-in"/>
+                <element inactive_on_update="false" label="Pending check-in" sequence="10" value="pending_check_in"/>
             </choice>
         </element>
         <element label="Request number" max_length="32" name="request_number" reference="sc_req_item" type="reference"/>

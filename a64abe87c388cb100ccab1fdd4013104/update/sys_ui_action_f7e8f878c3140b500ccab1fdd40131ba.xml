@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.reservation_status == 'pending_check-in' &amp;&amp; gs.hasRole('x_451445_wrm.wrm_user')</condition>
+        <condition>current.reservation_status == 'pending_check_in' &amp;&amp; gs.hasRole('x_451445_wrm.wrm_user')</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,7 +30,7 @@
         <name>Check In</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.reservation_status = 'checked-in';
+        <script><![CDATA[current.reservation_status = 'checked_in';
 current.work_notes = 'Reservation checked in by ' + gs.getUserDisplayName();
 current.update();
 action.setRedirectURL(current);]]></script>
@@ -44,7 +44,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7e8f878c3140b500ccab1fdd40131ba</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Check In</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
@@ -52,7 +52,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>sys_ui_action_f7e8f878c3140b500ccab1fdd40131ba</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-14 11:46:16</sys_updated_on>
+        <sys_updated_on>2026-04-23 12:42:30</sys_updated_on>
         <table>x_451445_wrm_reservation_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
