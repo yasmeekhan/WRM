@@ -3,7 +3,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -15,10 +15,12 @@
         <condition>current.reservation_status.changes()</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_451445_wrm_reservation_tracker">reservation_statusVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="reservation_status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>RsrvtnTracker_WrkspceOption_sync</name>
+        <name>Reservatn State synchronizatn </name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,70 +29,44 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-   (function executeRule(current, previous) {
-
-    //gs.info("BR TRIGGERED");
-
-    if (!current.workspace) {
-       // gs.info("Workspace is EMPTY");
+	// Add your code here
+	 // Safety: only act when status has a value
+    if (!current.reservation_status) {
         return;
     }
 
-    //gs.info("Workspace value: " + current.workspace);
-
-    var workspace = current.workspace.getRefRecord();
-
-    if (!workspace.isValidRecord()) {
-        //gs.info("Workspace record NOT found");
-        return;
-    }
-
-   //gs.info("Workspace found: " + workspace.number);
-
-    //gs.info("Reservation Status: " + current.reservation_status);
-    if (current.reservation_status == 'pending_check_in' || 
-        current.reservation_status == 'checked_in') {
-
-        workspace.status = 'unavailable';
-       // gs.info("Setting workspace to UNAVAILABLE");
-
+    // Map reservation status → task state
+    if (current.reservation_status == 'checked_in') {
+        current.state = 1; // Open
     } 
-    else if (current.reservation_status == 'checked_out' || 
-             current.reservation_status == 'no_show' || 
+    else if (current.reservation_status == 'checked_out') {
+        current.state = 3; // Closed Complete
+    } 
+    else if (current.reservation_status == 'no_show' || 
              current.reservation_status == 'cancelled') {
-
-        workspace.status = 'available';
-       // gs.info("Setting workspace to AVAILABLE");
+        current.state = 7; // Closed Skipped
     }
-
-    workspace.update();
-   // gs.info("Workspace updated");
-
-})(current, previous);
-
-
-
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-23 09:34:14</sys_created_on>
+        <sys_created_on>2026-04-23 14:26:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ca31bea7c35003100ccab1fdd40131c1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>RsrvtnTracker_WrkspceOption_sync</sys_name>
+        <sys_id>98ff67e3c35803100ccab1fdd401314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservatn State synchronizatn </sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
-        <sys_update_name>sys_script_ca31bea7c35003100ccab1fdd40131c1</sys_update_name>
+        <sys_update_name>sys_script_98ff67e3c35803100ccab1fdd401314d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:06:12</sys_updated_on>
+        <sys_updated_on>2026-04-23 14:26:46</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=ca31bea7c35003100ccab1fdd40131c1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=98ff67e3c35803100ccab1fdd401314d"/>
 </record_update>
