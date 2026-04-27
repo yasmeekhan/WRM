@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>:root {&#13;
+&#13;
+  /* Brand — Primary Blues */&#13;
+  --wrm-blue-50: #EBF3FD;&#13;
+  --wrm-blue-100: #C2D9F7;&#13;
+  --wrm-blue-300: #5A9FE8;&#13;
+  --wrm-blue-500: #1A6DC5;&#13;
+  --wrm-blue-700: #0E4A8C;&#13;
+  --wrm-blue-900: #05213F;&#13;
+&#13;
+  /* Neutral — Grays */&#13;
+  --wrm-gray-50: #F5F6F8;&#13;
+  --wrm-gray-100: #E6E8EC;&#13;
+  --wrm-gray-200: #CDD1D9;&#13;
+  --wrm-gray-400: #8E95A3;&#13;
+  --wrm-gray-600: #505869;&#13;
+  --wrm-gray-800: #2C3140;&#13;
+  --wrm-gray-900: #171A22;&#13;
+&#13;
+  /* Semantic — Status */&#13;
+  --wrm-success: #1A8A5A;&#13;
+  --wrm-success-bg: #E6F5EF;&#13;
+  --wrm-warning: #B06A10;&#13;
+  --wrm-warning-bg: #FDF3E3;&#13;
+  --wrm-danger: #C0392B;&#13;
+  --wrm-danger-bg: #FDECEA;&#13;
+  --wrm-info: #1A6DC5;&#13;
+  --wrm-info-bg: #EBF3FD;&#13;
+&#13;
+  /* Surfaces — Light Mode */&#13;
+  --wrm-surface-page: #F0F2F6;&#13;
+  --wrm-surface-card: #FFFFFF;&#13;
+  --wrm-surface-raised: #FFFFFF;&#13;
+  --wrm-surface-overlay: rgba(23,26,34,0.48);&#13;
+&#13;
+  /* Surfaces — Dark Mode */&#13;
+  --wrm-dark-page: #0D1017;&#13;
+  --wrm-dark-card: #161B26;&#13;
+  --wrm-dark-raised: #1F2637;&#13;
+  --wrm-dark-overlay: rgba(0,0,0,0.6);&#13;
+&#13;
+  /* Text */&#13;
+  --wrm-text-primary: #171A22;&#13;
+  --wrm-text-secondary: #505869;&#13;
+  --wrm-text-muted: #8E95A3;&#13;
+  --wrm-text-on-dark: #EEF0F5;&#13;
+  --wrm-text-link: #1A6DC5;&#13;
+&#13;
+  /* Borders */&#13;
+  --wrm-border-light: #E6E8EC;&#13;
+  --wrm-border-default: #CDD1D9;&#13;
+  --wrm-border-strong: #8E95A3;&#13;
+  --wrm-border-focus: #1A6DC5;&#13;
+&#13;
+  /* Spacing */&#13;
+  --wrm-space-xs: 4px;&#13;
+  --wrm-space-sm: 8px;&#13;
+  --wrm-space-md: 16px;&#13;
+  --wrm-space-lg: 24px;&#13;
+  --wrm-space-xl: 40px;&#13;
+  --wrm-space-2xl: 64px;&#13;
+&#13;
+  /* Border Radius */&#13;
+  --wrm-radius-sm: 4px;&#13;
+  --wrm-radius-md: 8px;&#13;
+  --wrm-radius-lg: 12px;&#13;
+  --wrm-radius-xl: 20px;&#13;
+  --wrm-radius-full: 9999px;&#13;
+&#13;
+  /* Typography */&#13;
+  --wrm-font-sans: 'Inter', 'Segoe UI', sans-serif;&#13;
+  --wrm-font-mono: 'JetBrains Mono', monospace;&#13;
+  --wrm-text-xs: 11px;&#13;
+  --wrm-text-sm: 13px;&#13;
+  --wrm-text-base: 15px;&#13;
+  --wrm-text-lg: 18px;&#13;
+  --wrm-text-xl: 22px;&#13;
+  --wrm-text-2xl: 28px;&#13;
+&#13;
+  /* Elevation / Shadows */&#13;
+  --wrm-shadow-sm: 0 1px 3px rgba(23,26,34,0.08);&#13;
+  --wrm-shadow-md: 0 4px 12px rgba(23,26,34,0.12);&#13;
+  --wrm-shadow-lg: 0 8px 24px rgba(23,26,34,0.16);&#13;
+&#13;
+  /* Transitions */&#13;
+  --wrm-ease: cubic-bezier(0.4,0,0.2,1);&#13;
+  --wrm-duration-fast: 120ms;&#13;
+  --wrm-duration-base: 200ms;&#13;
+  --wrm-duration-slow: 350ms;&#13;
+&#13;
+  /* Z-index Scale */&#13;
+  --wrm-z-dropdown: 100;&#13;
+  --wrm-z-sticky: 200;&#13;
+  --wrm-z-overlay: 300;&#13;
+  --wrm-z-modal: 400;&#13;
+  --wrm-z-toast: --wrm-z-toast: 500;&#13;
+&#13;
+  /* Dark mode overrides */&#13;
+}&#13;
+&#13;
+@media (prefers-color-scheme: dark) {&#13;
+  :root {&#13;
+    --wrm-surface-page:    var(--wrm-dark-page);&#13;
+    --wrm-surface-card:    var(--wrm-dark-card);&#13;
+    --wrm-surface-raised:  var(--wrm-dark-raised);&#13;
+    --wrm-text-primary:    var(--wrm-text-on-dark);&#13;
+    --wrm-text-secondary:  var(--wrm-gray-400);&#13;
+    --wrm-text-muted:      var(--wrm-gray-600);&#13;
+    --wrm-border-light:    rgba(255,255,255,0.06);&#13;
+    --wrm-border-default:  rgba(255,255,255,0.12);&#13;
+    --wrm-border-strong:   rgba(255,255,255,0.24);&#13;
+    --wrm-blue-500:        #4A9EE8;&#13;
+    --wrm-text-link:       #4A9EE8;&#13;
+  }&#13;
+}</css_variables>
+        <footer display_value="Sample Footer">feb4f763df121200ba13a4836bf26320</footer>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <matching_now_experience_theme/>
+        <name>WRM Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-25 21:22:28</sys_created_on>
+        <sys_id>29692f58c32487100ccab1fdd4013107</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>WRM Theme</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sp_theme_29692f58c32487100ccab1fdd4013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 11:45:05</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>

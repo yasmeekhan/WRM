@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source">
+    <m2m_sp_portal_search_source action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sp_portal display_value="Workspace Reservations Portal">d6092358c32487100ccab1fdd4013152</sp_portal>
+        <sp_search_source display_value="Catalogs">c96eb1686721220023c82e08f585efff</sp_search_source>
+        <sys_class_name>m2m_sp_portal_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-25 21:57:33</sys_created_on>
+        <sys_id>7381bf58c36487100ccab1fdd40131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Reservations Portal.Catalogs</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>m2m_sp_portal_search_source_7381bf58c36487100ccab1fdd40131ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-25 21:57:33</sys_updated_on>
+    </m2m_sp_portal_search_source>
+</record_update>

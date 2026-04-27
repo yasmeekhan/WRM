@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>bookmark</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>My Reservations</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item display_value="Workspace Reservation Request">9cc4581cc3dcc3500ccab1fdd4013177</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="reservation_page">834988f0c3e40b100ccab1fdd40131cb</sp_page>
+        <sp_rectangle_menu display_value="WRM1 Menu">80db6fa8c3e00b100ccab1fdd401313c</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-26 16:14:27</sys_created_on>
+        <sys_id>a34cefe8c3e00b100ccab1fdd40131d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Reservations</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_a34cefe8c3e00b100ccab1fdd40131d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 20:18:37</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=a34cefe8c3e00b100ccab1fdd40131d3"/>
+</record_update>

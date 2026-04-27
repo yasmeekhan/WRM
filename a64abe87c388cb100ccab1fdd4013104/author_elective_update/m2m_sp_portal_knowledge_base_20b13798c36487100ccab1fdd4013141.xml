@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base">
+    <m2m_sp_portal_knowledge_base action="DELETE">
+        <active>true</active>
+        <kb_knowledge_base display_value="Known Error">c0a54bac871023000e3dd61e36cb0bcb</kb_knowledge_base>
+        <order>100</order>
+        <sp_portal display_value="Workspace Reservations Portal">d6092358c32487100ccab1fdd4013152</sp_portal>
+        <sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-25 21:58:09</sys_created_on>
+        <sys_id>20b13798c36487100ccab1fdd4013141</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Known Error.Workspace Reservations Portal</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>m2m_sp_portal_knowledge_base_20b13798c36487100ccab1fdd4013141</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-25 21:58:09</sys_updated_on>
+    </m2m_sp_portal_knowledge_base>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</application>
+        <file_path/>
+        <instance_id>357f38c1fb3f4e50363cf633beefdce9</instance_id>
+        <instance_name>dev284713</instance_name>
+        <name>m2m_sp_portal_knowledge_base_20b13798c36487100ccab1fdd4013141</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base"><m2m_sp_portal_knowledge_base action="INSERT_OR_UPDATE"><active>true</active><kb_knowledge_base display_value="Known Error">c0a54bac871023000e3dd61e36cb0bcb</kb_knowledge_base><order>100</order><sp_portal display_value="Workspace Reservations Portal">d6092358c32487100ccab1fdd4013152</sp_portal><sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-25 21:58:09</sys_created_on><sys_id>20b13798c36487100ccab1fdd4013141</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Known Error.Workspace Reservations Portal</sys_name><sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope><sys_update_name>m2m_sp_portal_knowledge_base_20b13798c36487100ccab1fdd4013141</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-25 21:58:09</sys_updated_on></m2m_sp_portal_knowledge_base></record_update>]]></payload>
+        <payload_hash>-683049601</payload_hash>
+        <record_name>Known Error.Workspace Reservations Portal</record_name>
+        <reverted_from/>
+        <source>53a0e358c3e087100ccab1fdd40131b6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-25 21:58:09</sys_created_on>
+        <sys_id>e4b13798c36487100ccab1fdd4013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dc6a66f350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-25 21:58:09</sys_updated_on>
+        <type>Portal Knowledge Base</type>
+        <update_guid>a4b137988f6487101e00fcfab121ce43</update_guid>
+        <update_guid_history>a4b137988f6487101e00fcfab121ce43:-683049601</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Known Error.Workspace Reservations Portal">4d037f1cc36487100ccab1fdd40131de</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-25 22:03:55</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_knowledge_base">m2m_sp_portal_knowledge_base</sys_db_object>
+        <sys_id>0568a650afac4b1aa396e924cc999cb9</sys_id>
+        <sys_metadata>20b13798c36487100ccab1fdd4013141</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Known Error.Workspace Reservations Portal</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_scope_delete display_value="">537389c6c0d04727832ef30c60e8d4e9</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_knowledge_base_20b13798c36487100ccab1fdd4013141</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_knowledge_base_20b13798c36487100ccab1fdd4013141">e4b13798c36487100ccab1fdd4013144</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-25 22:03:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
