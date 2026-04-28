@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=508011000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=885705000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>workspace_reservation</internal_name>
-        <label_cache>[{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["workspace"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location.name","label":"1 - Get Catalog Variables➛select_workspace➛ Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location","label":"1 - Get Catalog Variables➛select_workspace➛ Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_451445_wrm_workspace_options","column_name":"location","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"ca4bca60-edd0-419b-a0ec-1139361143f4.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"2358b799-1fb5-4458-ba11-f4a8d1a2c62c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.16e70d3dc35883100ccab1fdd4013146}}","label":" Workspace Agents","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"ca4bca60-edd0-419b-a0ec-1139361143f4":["approval_conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087":["requested_item"],"ca4bca60-edd0-419b-a0ec-1139361143f4":["record"],"efa3c835-b2da-41f5-97b4-c312e6207984":["record"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number","reserved_for","workspace","number"],"c5cc896a-60a9-4826-bef1-5b92994a0a87":["record"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["record"],"f3cdb683-8d09-43ae-80ef-f09447e96e23":["record"],"9addce94-399f-499b-8a42-3aa18a4faaaf":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null,"ah_to"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"Service Catalog_1.request_item.work_end","label":"Trigger - Service Catalog➛Requested Item Record➛Actual end","reference":"","reference_display":"Actual end","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_req_item","column_name":"work_end","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"]}},{"name":"Service Catalog_1.request_item.number","label":"Trigger - Service Catalog➛Requested Item Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number"]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.purpose_of_visit","label":"1 - Get Catalog Variables➛purpose_of_visit","reference":"","reference_display":"purpose_of_visit","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.email","label":"1 - Get Catalog Variables➛reserved_for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["ah_to"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["reserved_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["start_date_time"]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description","description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location.name","label":"1 - Get Catalog Variables➛location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}}]</label_cache>
+        <label_cache>[{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location.name","label":"1 - Get Catalog Variables➛location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description","description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["start_date_time"],"be068acf-a300-4203-9490-daf8791b7205":["start_date_time"]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["ah_to"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["reserved_for"],"be068acf-a300-4203-9490-daf8791b7205":["reserved_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.email","label":"1 - Get Catalog Variables➛reserved_for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.purpose_of_visit","label":"1 - Get Catalog Variables➛purpose_of_visit","reference":"","reference_display":"purpose_of_visit","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"Service Catalog_1.request_item.number","label":"Trigger - Service Catalog➛Requested Item Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"]}},{"name":"Service Catalog_1.request_item.work_end","label":"Trigger - Service Catalog➛Requested Item Record➛Actual end","reference":"","reference_display":"Actual end","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_req_item","column_name":"work_end","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null,"ah_to"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087":["requested_item"],"ca4bca60-edd0-419b-a0ec-1139361143f4":["record"],"efa3c835-b2da-41f5-97b4-c312e6207984":["record"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number","reserved_for","workspace","number"],"c5cc896a-60a9-4826-bef1-5b92994a0a87":["record"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["record"],"f3cdb683-8d09-43ae-80ef-f09447e96e23":["record"],"9addce94-399f-499b-8a42-3aa18a4faaaf":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.16e70d3dc35883100ccab1fdd4013146}}","label":" Workspace Agents","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"ca4bca60-edd0-419b-a0ec-1139361143f4":["approval_conditions"]}},{"name":"ca4bca60-edd0-419b-a0ec-1139361143f4.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"2358b799-1fb5-4458-ba11-f4a8d1a2c62c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location","label":"1 - Get Catalog Variables➛select_workspace➛ Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_451445_wrm_workspace_options","column_name":"location","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location.name","label":"1 - Get Catalog Variables➛select_workspace➛ Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["workspace"],"be068acf-a300-4203-9490-daf8791b7205":["workspace"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9708bcc2-14a5-461b-a1ee-61f5e6643919.record","label":"5 - Create Record➛Reservation Tracker Record","reference":"x_451445_wrm_reservation_tracker","reference_display":"Reservation Tracker","type":"reference","base_type":"reference","usedInstances":{"be068acf-a300-4203-9490-daf8791b7205":["tracker_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>9ed5198ac39807100ccab1fdd4013107</master_snapshot>
         <master_snapshot_digest/>
         <name>Workspace Reservation</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>479a65bdc35c83100ccab1fdd40131fc</sys_id>
-        <sys_mod_count>138</sys_mod_count>
+        <sys_mod_count>147</sys_mod_count>
         <sys_name>Workspace Reservation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>sys_hub_flow_479a65bdc35c83100ccab1fdd40131fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:04</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:57</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>4b8c376fc39803100ccab1fdd4013166</version_record>
+        <version_record>4d5dd28dc3e4cb100ccab1fdd4013102</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=479a65bdc35c83100ccab1fdd40131fc"/>
     <sys_variable_value action="delete_multiple" query="document_key=479a65bdc35c83100ccab1fdd40131fc"/>
@@ -150,14 +150,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 17:43:35</sys_created_on>
         <sys_id>6dbae171c39c83100ccab1fdd4013138</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:49:58</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -279,7 +279,7 @@
         <trigger_type>service_catalog</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=479a65bdc35c83100ccab1fdd40131fc^sys_idNOT IN08afe292c354c7100ccab1fdd4013101,5711063dc310c3100ccab1fdd4013146,62e19a7dc390c3100ccab1fdd401313c,6bff9a79c314c3100ccab1fdd4013145,732692b5c3d0c3100ccab1fdd401316b,c123aad6c3d0c7100ccab1fdd4013141,d85ddef1c314c3100ccab1fdd4013172,e1649bdec358c7100ccab1fdd4013190"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=479a65bdc35c83100ccab1fdd40131fc^sys_idNOT IN08afe292c354c7100ccab1fdd4013101,5711063dc310c3100ccab1fdd4013146,6bff9a79c314c3100ccab1fdd4013145,732692b5c3d0c3100ccab1fdd401316b,c123aad6c3d0c7100ccab1fdd4013141,d5bcda0dc3e4cb100ccab1fdd40131fa,d85ddef1c314c3100ccab1fdd4013172,e1649bdec358c7100ccab1fdd4013190"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
         <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
@@ -295,10 +295,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 12:01:38</sys_created_on>
         <sys_id>08afe292c354c7100ccab1fdd4013101</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>9addce94-399f-499b-8a42-3aa18a4faaaf</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1W227bMAz9lUDPRuBLLk3etg4FBuwCNEP3MAyCJNONMPkySU6WBf33UbacuEmatsA6YMMe8hCKFM8hdUh/2RKZkjnhWchZwrhIojBKwjC+GEV8kvAoThMGwEhACpYDemr4XoOxkFJpIUf7iqnaHWy3C9ArKWBwySxT5S2Nht65cb27Q+dUmkqxzY2PQYtYSpVqKMj8y9eAVExjGguazLcHR0/FqRgHha6LmufSItDBdYviDAe7qVp7BphPgDe981dd9+ylTh26MCDww0KRAsLKmDIQkJwVKbOl3pC51TUaNLD0Y6E2O4+lLGxLO2c/jPyJSZM46OWdEyMowuuA7U6or1yDxqMfvG2dsjdY8AWmFLbWu7KW2ArTli6FjNXKXvZtrcPHysqyaEMs46qLLlWdFx/aapHdBb221QYhQeUK4Ch5ftliWa531bqSRVMrf6hKwVTPFZgWyysJyjW2qHOOvgFh1mrJa+twbgkoyDEBzVlVyeKWVrpcyeZSxJgPbxX+GWaqXCMYI2+LIROO0BD7wIZXaH/TmG+Ylo7de7ymyVJiV2iqy6rypF3DyF1AzMZcKmbMnju2gH6vHfK2Ep4zbcvmQoSWlX2FiVfg6d0Fna74ufeaRfs3ia3E/lqgwqvnQF4zIUbji0iIJMXfOAyFYDzK0nSEF0fT6bG4Ppf6m6kYCvIaDEqTucr0xPBM5T3OpFPeJ0+lGwTNOzUDVMega8RgAdY8Tv75uoxeTJeW4tu4B9BQvJiuPCVqWkqnJPt4If4JDbtcf0rB0uCczEt8Mw1n2u9VI2YUJhLBrjiIe+MS81FdF1bmQBtxUVnQsjIrCeuXGwTT8/KZ7rXQvbDuXZneEJiE4/FMzMJmAEwPh4BI5+5ZIhlXQVrAOoBJfDET6eh0AB8dBbCYcyYizDA7ETCOjwKyUcYBc+BcOhEwOw6YzGIBYfpAQDI5zpBMRCweCuDhUcD4ggkWOg7R6AQkdhhwPDr/1/mF6vy8nfME0XQ7p5uwNz3VnBGUXyxG1WbJa/EN7MFqWbiTwevuyG+X+Px28ZanrJcoDsPw/oZ5YHf8rcvh/hrAcZ3hhsfa7fuAbwKaSpImBJO+1LJ40tDHR1cIVaNnjqWQGrPsoLolvXNzpemBAE3Xus20c6l088nlPgoUCNuQ7LZSWWvhtxZaDzXy+1bP119oMniE3Q0AAA==</values>
@@ -319,39 +319,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 19:21:28</sys_created_on>
         <sys_id>5711063dc310c3100ccab1fdd4013146</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>ca4bca60-edd0-419b-a0ec-1139361143f4</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1YXW/iOBT9KyjPlHUICYG3qqirrnZnJNqdl1JFxr4Bj0zCxE5n2Ij/vjexQzLQMrBiHrqdl0q+vtc593COP/pYOII7Y2cYxn0Yjfpk7hLiERL6jIQezL1hMPQoI07XSegKMDMDlmYcx89U5mWgKO4hexYMOjdUU5kuIreXwZcclI6EhtV2i8lcqLWkm0+2BiNsKSTPIHHGj09dZ00zXF5D5oyLvalT8Uk6B4mp0xrgPmC9WZdjnrJ8BQmCq4N/2sqJnencTXAGi0o4pOvANw0JB8QRU6mg66xowqlOs40z1lmOgQwo/5jIzS5jKRJt+lzRb0r8gx/2+mVeDNgYsxzshpHlx4TjCRJ5jysznWc7ulKkWBlKOMQ0l/qmHTMJH9dapIkp0XQu6+pU5qvkgyHE2S3Q+jlyhSBgXfZZIjdtxffL9Ou0BnkrkooR26JMGZW7EdU6E/Ncl3AKByRUFK/oei2SRbTO0mdRFSOUVW8hcdCLZfoVv6nEIulRVuLuIau0d4vxSRX+RDNRNvEXLoPF266jNupGUqWaVpDD6EteIjGN2RaiigVDQVnHMrHW1/iVZ7CYt12r/Tk7qi3WSMks10hfsQiVXqn8UONT4wHgnTszf57iT0BVK/7BwtpDafVeDaNq7nu5V2WdD2bCqt09rnYbaeRudPKC2kPyhtRu23rzcv+R0mEQeD7+GcYecfsuCSEIQzYilIVB4A+8RkOIAHugEvVNFa7daP4Cm/kJMGppX1scnWmN41WAVu4Kf5hksSf1+zpoZd4/U+av7+pu8J6EnouHPZZN5IDnn+OI8nN/JwL31btSR0F/HoxIyK94TOZXg9DzrygDcgWB64PPA+a73k9wEXGP7cw8fEGksQDZvjPVE4dmas2cZ6oTUB2Y6tbCeg2utVQ1fOkEqer3TpDLWSsk5C156z1dmdhRsUHrIPmc5llyxAHRUqhKGa86oZVxniNOAFk74g+Dct8Q++D/ix+8X374//th4B+VWutyvlM1SxMuSsSq5QqzM4OawmdgWl0nm98fi0JpqgXruQEMCfc48/ww9PBDjNG5G3M+IK7nDoLt9unQRRdY8TzXnUDF7qWeS1A/osZ6rrnv2aK275pbop203htc6u3+xqz3Xt4z7KjW4lGjLZ4jQVS3H+/FzDGwZ8545iRpAjOnO3PKrKgUVxXGDAS3m6hiRbHdmkieUbuA2xo21ZxuVJWp2BI4arOKfheJKjPY+CX+U3YCJ7X/Jjl0JoaUQ5rq51SN0/AiDs68e5tQrfTbg2ifff7Fzr7BL/td4vEU7Z4XeLDh7ndBTz79CxXH/h5LFgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5711063dc310c3100ccab1fdd4013146"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Send Discord Approval Notification">3c5f0239c390c3100ccab1fdd40131cd</action_type>
-        <action_type_parent display_value="Send Discord Approval Notification">1e5ac2bdc350c3100ccab1fdd401315a</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>3c5f0239c390c3100ccab1fdd40131cd</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Workspace Reservation">479a65bdc35c83100ccab1fdd40131fc</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-17 20:34:52</sys_created_on>
-        <sys_id>62e19a7dc390c3100ccab1fdd401313c</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
-        <ui_id>025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/9WTSW/bMBCF/4qhs+RqtUTfigQGCrQN0CTtIQiEETWMiVJLKMqOa/i/l1psK4uzFE6A3uxHaubNG35Xa4OnxtQIacBs1yPUIzb1HNumFBKHpalvO56DjmEaOWSob0qsUC4wjVkhtboAUTfyek0gTSkS3/IIYZZPSGJF4LuWB+DoHwwA2Hj49Wajv095VQpY/ezLaIXOuUgl5sb06to0SpC6r0JpTNcPjl5rXECCQl/90fcezVrnT8+jVmWnMtSNKPbS112NvV7ItLHlmAbeKcxT1H4YiApNI4M8BVXI1U6RCOlZLvbCnOeqGziDu4r/0V091xw0nhrVqopr7c4YyHEfmD6+7I7YKSg4V7Kmqpa7DAtOsepySpFBLdTJUOsunJWKF3n3iYJEPGhKC1Fn+fcuJ2NXaLArfTFOsWyGb6bpR2Pn82K5S2rG8zan/lAUFMTgKoKk8xlH0Wyz3YlpgFKSJ7Vq3K6Nml88XkonPrUWFJhpN3EGZcnzm7iUxYK3DvRA2fhG6D9jJoqldl7xm3wMtElhrBcG45nWT1v5J0jeRPJNl2nTqPllzm9r/NIYTUJkkzBAy9cP2/JtMrEikkQWjYKAUkzdiEbGxmzSPBFQVfsQ9RDxbd1E0EXahxd3e2g+oZKX6rM2tcA+p425xdR/9rXD/lkvC/m7KqFN5I2MVjpBquJdheNw+rLzLae/BtafmObthLrvRuhd7AeO7wfxUmb7wOKi5ao6wO1uvtHZ7t6RIX7R18ejvXfx30BOaWIzhhNrQjxNehQ6VhIFrhUEIZ2ECQlI6r8D5L7zHCpsgEWlQKpYz4Sx4tm/oH6/wFFIf4X9LennTfuRfvo4uuj8Hxysp75d7KOD7QtpKn3qK/Xse0dj37fvs3+A7uPD/DG4HsDxceD3oRxG/iFQoh2EHnF9i9nEtfyJBxYh6FpuOCHUYR4w55hQXv8FflpZ5SILAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=62e19a7dc390c3100ccab1fdd401313c"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
         <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
@@ -367,10 +343,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 21:36:23</sys_created_on>
         <sys_id>6bff9a79c314c3100ccab1fdd4013145</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>5083b947-7c28-4bc4-bae9-48b9a31d4f31</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1c3W7juBV+FUKXU8uRf2VnrqbJTifA7E4xCXZRbBYCRVKxGlnUklQSNzDQ+z7CAos+Sx+lT9JDSrJkO3HkiZPaWd1MRvw5PIf8vvNRpqSf762QWsdWn46coR/0sev0uj3HGXXHY783DpyRO3Y6hFotK8ZTBi0FI1zo6xscpbrg/v6ciZuQMHSCFY74lddpC/ZryqTyQsWm8zk0pqFMIjz7Me8DJWQSRlSw2Dr++ZeWlWAB5hUT1vH9SlVd/yLsswiaXmBxxRT6Wvi56reaJfqacpJOWQw+FoWfcwOneQ06O4Ua6KS9cloWu1MspgzcCXAkWcua4phixcVsUSIYpl/iqCyYhLECkx+k5CTEikmkJgyxKQ4jdBuqCcIoc6xtaXt3MvwHONfralMBgzkg2tcwJiEFj6xKsZdPKVSfldXBKazBuRIpUalYzDSH1ZHZbFIW4DRSJ9WyrMGXRIU8zroo7EdFbx6l0/iHbBKthYHKSqYSnGGJnhsdLAwOgQfnE377tXD2YxibWcxnJeIER4ur4JxhQSYfQxbppY7TqQ9tWxZWSoR+qrSbAIoIWpXjeMZVPRa0ZBEzSznFSRLGV14i+E1oBgT3p+2rCC7aQcRvob8Mr+I2JjrWNqwebn+E8lNT/CMWoQ78ezADnectS87kSYSlLMOH+fd+TbX32WQsu6N7ewZwujMRYaI+wFA3LA923sr51hlvwjPtl7it2Cw5J4kHFDP0WifX14x8jKKzrH47qtVwraSahsnDruY0Wyv7XO2LfsgqcpJ1tiRZBrWcYxdALJVxP6MUUrl7C16NnGVePcKn/eDRgh21ibRMmJchBYBEehmy89jM4N9Alqco4gyHvj/0B26vxOGYBNT1gyF2Sa/E3S0kVjHF4tozibXCk846O/KUsR0navhScAKScZRShn4qnNrkZ04Sn3PIbvEqQ8DTo49mdhcM6T5LhjJoIsURLGY0A/FZuKQLS2lSE6xQKJGE1WqjC47CPKpKjxaa8RRNU6mgmYKaJfIt6Vl/f3mXwyEvPX0QKwdBzN0TcLBZCHAJbDzxFK/QDt3fjzGlhI37dm88Duw+9LRHuN+1exh34D8BxjiAbaKErSOjXsDFfI7Wyfrthrbjd41QF5rH1+POaSxhleOrFRafF4U5g3ubGZxJ2hqBKxLm7C+ZDoUr2vEonIYGEBnLd08fuhFTzFmCESEV+uzgfqnG4AWgT07WPdkG0P1vk6QG0QeH6M7Gm3A2XMKRv2tI1xi9gPSfVzDtbw3qQQPqPwioB5thRZaAJFP/74yoCrB/4uJaJpgw9NXsQbDZYee34PBXN2d0Hf61+225kXk6moIk54tYHopvG7IMmy3N/50ruycG3giloLucYTmdVVhxmTpOjyRI+2yrMJ5NCROcKx8m5tpU0kvrMmvGPrEo4ijrApSIEdFRFK20CQ9gr/1Owii6tJBUs4gt6jN4HMMtahTG7D3UEx4DGoE+oVnnoqUJD6qNU9qU8baovb8PqKcEjiXcQ0yPca/LOg7DNhu5I7uPxx0bj8fUdmnHH/V9ZzjCznxehLDZeRgKIUwIS5Qsh/CCNDYrK8EncFQj6K7o6LxyGPlKQe4JaWFKU+2vYP+M1gnTuGLnPpu/GJZDPNVV95J1GoFzd2rhKOeRChO7dNbcipnCC56sNsu9Ktp2kI3+wlRxXoEKKkkDwu7wSr1H1TvKSrHmVi1vpcJCFS0fHTAzcaRt1LCJheC39dfCJHqbAHXUtp2WRvrv77894meloN1u75lH280tZMbCulnjbzUPaV6BkJfAXOe7F2CCKfPqcFOngaqvj1pDMa+kFv3zXsigPdJIy6awMPEFVAAtmqLCDkpCcs0E0nh/FK8w8VViwGUdQmSZ2c7Exg6BjQ/0eDipx9yk9HzZ//mv2uuSrcN2a7dekORXcS5oZWV3GPsyeb+x3d94KtDtYqMnKhu9/IAUTbBEPmO6INvxtR+xWE9KTxlk3Uge51gUWamNFrvN433TWUKcrtsbDWx3zDp233X7NvaxY5N+4LOg2w3IiB6AztYNo9HZFZ2VsB0myitZUlaVt0hxo7pvXnVXVvsV9LcOZ/dPf1cJA0XbEeVg1biUs3NNc3QRTnM9WxLjvZG2LhuPAuq69sDt9O1+4BDbp52u3fVhZ0eCvjsedg9A2uqG0UjbqrRplHpghXkqbARst3KxOrmvoBd1iLCHerEdCt+AOnwX04o27JEg0FGvF9CeY/foyIEb/kHHHjGf2EGn4zIM/44DcgCCUDeMRhBWBAHSVyMHLyMHy1P7CmJQhwT7JwZbIfANSMFnTszvbXsnBUPMsEu6gU16LrX7DA/sUa/r2NjpUzYaBMHY6RyAFNQNo5GCFSmIcmA2R0tPk/oN/cj1WkdLdXi5f+pUkOIPd6xU73DnLDBP3E/wDUM4niFzgqQTfAslEcOSmZSOiTIP8pc/CiqGp887VrqY4PhaD95aFtiHH2K6gPGWh1t//CkfPqve9QMguxHNvdGkRhIaSXi+JDRPGxycLGSX//n3xupdPmSQXa4+RICOsvIXeoygydZNtj6YbN2cUjen1E/9+FTmy+o5dZHGm5TZpMwXTFDNuWhzLvpoPnqJk9EmFzW56JFc1BzKNYdyD+ahlziWa/LQW89Db+g2sjkHas6BHv397SXOebLL9XOcIidvcZKz3QvpNd4iXny1IXuHeO2l4vxV9ImaRisvon+6+P5z+Rq6+8xvNgwHg96weRH92R9tSG5plwqeJHlsu/1wQ1GoIygwAv/d2NI6encZv3v3AZRfSqRdP/qQZSQdC0olhG/IFJidGEbcfAahjc6NgewjZ6AoqYgRRuaBmDbSFr9o5KHsi5X6e2k8CPS30PwZ+lMHtiboO5AUgT4BCCM9xDnLZtA4c4PDyHwDkRs8SJTjC6WJTpUCXNV9Lq22zrGB0okzc093Z3d4CtngGLwRSE64ULAaJNtP0aJhG5b76oqJNkmF3kq1TUO9nCYuGPW9tpVHtrCiC4+s+Xz+y/8AAgmJAR9WAAA=</values>
@@ -385,16 +361,16 @@
         <display_text/>
         <flow display_value="Workspace Reservation">479a65bdc35c83100ccab1fdd40131fc</flow>
         <generation_source/>
-        <order>7</order>
+        <order>5</order>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 20:53:31</sys_created_on>
         <sys_id>732692b5c3d0c3100ccab1fdd401316b</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>9708bcc2-14a5-461b-a1ee-61f5e6643919</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WS2/bMAz+K4HOaWDVTpbkNrToaQ9gHbrDsgq0RCdC5cckOW0W5L+P8iNNuxZrhl0KNKeY5PfpI0Xa/L5lWrE5m3CMxjM+kTGP49MoOp0mPJ3EKT9VMSAmbMgKyJEiPaQGRfMwZGswdTDeiWTMk2Qsbm0uLDq0a/C6LIS3IG/QUqjSrjKwueoQX+6DBl/3QXKljbJYsPn3H0NWgaVjPHnm20eul4o2kKKh0K9B9TNJ+E31pO3DIXbwqXWUVgU90ZDhncdCIQnJwDgcshwKBb60Gzb3tiaDRVCfC7PZR6x04YmQhdg7p3/RsdMoxGVImUlsfftH0dWsNWfn4OGSmKWvbRcqV6WW6NqaKMygNv7s0NYGfK5CnVtIk2aHLk2dF5/akrA9QX9FZKkdicAq5BmUd2lkl6vy9kuv8kIXTUk6pyklmP0TeG91WvugZ8vQYE5EIoeq0sVSVLZc6wZMWvLR0tDDKDPlLR3q9LIYgQzCR1RWGF2Q/bwxX4HVIYuPREPg3ZC5jTsz4Nx9LlRE8bMOStrMuhxEW4YAkVZX/j0dsMZO7m7YT4PCaPZsY/H0vpGaAXAHk2DxJxm8KOo8RbuooyhW2+0l9Trdw+CMEjHlUvBRH6c95rvddTszqERW7kEzUEriLDmJZ7PsJJnN0pMpJKcnMQCnPxkAZKNDIPHclvbGVSDxKBJHFyO92IOJyHmwXlDhUXidH0n3EEtsVPx/5HqAJKbQXqEnjiLpQftCty8n0ulr1zKF/ggtKVcob4QurolXhygwoiipf4868ABMjR163tHZ1NRN0x0r/wDX3ozvasivqedpIJqhWtqyrjreRf+6XbD5gg2+9Rc7eL8MWhZsuGg7tvHzCb6LVKxkPJ5OYx5FUkLKM6WSiMc8mTThNGJCqxfG7/584b8NxttgvA3G7vgl5+/fon7JudBolHvi49RvOJhT6tQy7cfq0ZbTOQdXnbPbdPj/2nT4JGp+r2jfaZN79evOwWb7zOLz4zccvvkOCAwAAA==</values>
@@ -409,21 +385,45 @@
         <display_text/>
         <flow display_value="Workspace Reservation">479a65bdc35c83100ccab1fdd40131fc</flow>
         <generation_source/>
-        <order>6</order>
+        <order>4</order>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 11:07:05</sys_created_on>
         <sys_id>c123aad6c3d0c7100ccab1fdd4013141</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>f3cdb683-8d09-43ae-80ef-f09447e96e23</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVTW+jMBT8K5HPCEFIoza3VaJIlbqtlKxy6XaRsR+JJWOobdJmo/z3fYAhKKnaVOqlWm7vy54Z5sHjnghOJmQEPAhvwjGLwigaBsHwehQm4ygJhzyiACHxiKIZYKcGlmuO8ZbKskrs90vQW8FgMKWWynwdh76G5xKMjYWF7HDAZi5MIelu5WYwwzZCcg2KTB6fPFJQjcdb0GSyPyldik/SBCS2LlqAp4DtrqhinrMyA4Xg2uSdm5y5yuB2hhUcquCEgUfg1YLigEBSKg14JKOKU5vrHZlYXWJCA+UPSu66jo1QtiGa0Vcj/uLNo6DqSwGZMSdCF8ZOoCadzlDJJZ7MbKk7vXLU2DSacEhpKe20n2saHgorctWMWJrIdjqXZabuG0VId0DvfZQGQUBR8ayQN7TS5SZ/WbQg50LVkjiKMmdUdhG1VouktBWcPQEJtcYZLQqh1nGh862ohxFK5q8lBn4q8xe804i18imrcPuoKvXnmJ/V6RXVoiLxE4/B4YNHzM5MJTXmSAU1jJ/LCklDzFGIaxVqCeLaCdUw06KwP/CqLTjgB89tQHL1nsPYzdFQvTOPW2BYjKavDX9u90WzDsAHt039c+a/AFpr/l/1K38bqvP/We6uPzu4bwrO/Vdf5v7r7+R+R+Pb2/8j0wfDdz+rPSfVPjd9w1tq4XcZBBGP/mCwdgHyKySa+XwLLpj43F5cgL7di7kAyc0bdNqlAMSA8OKG3sliuOJg5Yrdr+HLtiMcB/XzjXbkv/lDPP0DsACMMiUJAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c123aad6c3d0c7100ccab1fdd4013141"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Discord Approval Notification">3c5f0239c390c3100ccab1fdd40131cd</action_type>
+        <action_type_parent display_value="Send Discord Approval Notification">1e5ac2bdc350c3100ccab1fdd401315a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>3c5f0239c390c3100ccab1fdd40131cd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Workspace Reservation">479a65bdc35c83100ccab1fdd40131fc</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 23:42:16</sys_created_on>
+        <sys_id>d5bcda0dc3e4cb100ccab1fdd40131fa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
+        <ui_id>be068acf-a300-4203-9490-daf8791b7205</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW227cNhCGX2Wh6+VWlKgDfVckMFCgrQHbSS6CQBiRQ5uITqEoH7rwu5c67K582MQu1k56Y6yHQ84/P+cD9XntaekdeYmIlB+EXITcFyH1fSEgp0pK5tOQIvWWXgUlukyDLZorlJmqjYteQdH14fWag5QCOSMh54owznOSAgtICEDdDwUAajXffXfn9kvdNgXcfpyOcRFxqQtpsPKOPn9Zeg0YV9ei8Y7WD5aeK7yAHAuXejrVXhwPyp/ux942Y1ShKyRwCv25PWMXr43sZdGlhzcWK4lOj4KixaVXQiXB1uZ2GzEI8qQqdoFLXdmx4RJuWv2PqxoGy1nhI6+9bbPOqfNm4WwyzC1/GJfUe7BwZk0nbGe2HtZaYDv6JFFBV9h389iYcNJYXVfjFgt58aCoqIuurP4effK2B83uyiVmEpu++b6bqTV1dllfb5061tXg07RY1AKKWSqCEZfHGov+Noc7WXpgrdF5Z3u1a6/T548vZQw+dS1YYOnUZCU0ja4ussbUV3pQ4BoqVxeF+2elivraKW/1RbUC0buwchcGq2MXfz+EP4LRvSV/uWMGNzr9odLfOvyjF5onqOIkQsLcYBPm85ikPE+JSKNICJRBKlLvbtm7+a6Att2Z6JrIvnW9BaOlk3nZeA/9FmF0Y393oq5w8uluucGUfXfaYTfW17X52jYwOPJCRlvnoLDZ9oTDcPpj5RtOP82kP9HNywkNXo3Qm4xFlLEouzblzrCsHrhq93C77W9xss07MMQ/1PX2aO9U/G8gFyL3lcKYxDx0pKcJJXkaBSSKEhEnOY+4ZK8AOaPfQ0XNsGgtGJu5njCzuvwvqN8/4CCkP0P+hvSzvvzCjT4uzkf9exubqB8u9tHCZkL6k36bTprYDw/GPvPvs7+H7sPD/Da47sHxseH3oZxb/iZQoh8lIQ8YUT4PCItDIJxjQIIk5oKqEBR9DSgFgODgSxEiE/nDqfaj3exaA+IrmsygcDN4n8nET3MhAkIZRE47zQlQRBJTFWEcs5BTvhr3HQTFZ4jeoHg+ql6cblTv6+blzy97m+d3/JCHfqKySfUeRE93mYvzbeZrPsFPa/sJ39ddmQ+lf/3HV3KqVA6chDJwj2/u/kAgqYM9ke5FY5CwQ35hf/kX7pGlgQoPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d5bcda0dc3e4cb100ccab1fdd40131fa"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -439,10 +439,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 21:24:40</sys_created_on>
         <sys_id>d85ddef1c314c3100ccab1fdd4013172</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>c5cc896a-60a9-4826-bef1-5b92994a0a87</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VTWvjMBD9K0FnY+wkzba5lYRAodtCUnrpFiNL40Qgf1SS02ZD/vuOJTkxabak0MMW1ifrzYffjN7DT1siOBmTqM+j+CoesUE8GPSjqH85jNPRII37fEABgASkoDlg5prKGjSe7QsC2lADv+ooGvAfCHOhK0k3j6ejbCUkV1CQ8dNzQCqqsKkBRcbbo9C5rCRNQWLqTIDk+gRNs6mas4EcaRlIHG2H3/riBx/sPfpgqXhDKo6igMCbgYID8smo1BCQnBacmlJtyNioGgEFlN8XcrPPWInCYFvS5L5p8RsJxKPIPk12BjgmA5exPyZ+cw7OptTQBfZnplY+la1KwXAouyAOGa2lmXQxl3BfGVEWrsTQVLbVpazz4s6th+wbtBeFSK2RBFTNtA1/N1y2WJWv85bkTBR2M35QWTIq9ydqjBJpbRo6WwIScuyT5LSqRLFMKlWuhS1GKnm4lHgIM1m+4je1WBYhZQ3vEHdLwxniUws/UiWaIX5iGyzeBURv9ERSrQ+j4A6Tl7ph4gbzIyR2C3YFiZVFU8yUqMw1fmoNnvgu8CYYwodyiw/qUsBQIh0TbLcLUGtcfm+C9GW5TOJQwQtK0CQCtbfbvbfGp+1wBr/WDvOW4DFhbwdestrejuBHXpj6SO9m2jXCV/lg+N8B/7AD0ouPFMauDoLq9Oz8CliCoreCfy/3ubMD8N6Ni39O/GdQa8X/YK/8NNX2d3CM3XZre3cu4NV/8WXqv/xO6vdjfHv5/030z38AwQaI2P0IAAA=</values>
@@ -463,10 +463,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 14:42:18</sys_created_on>
         <sys_id>e1649bdec358c7100ccab1fdd4013190</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:51:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:46:16</sys_updated_on>
         <ui_id>914f73c5-501a-4efd-b10a-7b6c0a07cabc</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/9WVW2/aQBCF/wrys01tvIDNW5UIqVLbSM2lD1Fkze6Ow6rrS9ZrCEX5711fME4ITVKRSH3DZy9z5sx+4npjCW7NrJgwN0QaMj90me+5LmNAvZhz4nq+x3zLtlJI0OxUWKBaIo/iTBl1CbKs5M0mBM4ZhsTxwzB2SBhSJwAycnwAz/yIASAe9k8/PJjzXBS5hPVVe41R2EJIrjC1Ztc3tpWDMnU1Kmu2ebL0WuMSKEqz9UdbezCvnT/fj17njRqjKcSwlb52d+z0TPHKlmdbeK8x5Wj8xCALtK0EUg46U+tOUQj8LJU7YSFS3TScwH0hfpuq/sjuFZ5ZxbqISuPO6slRG5hZvmyW4lPQcK5VyXSpugwzwbBocuIYQyn1SV9rNpzlWmRpc0QDlU+KskyWSfq9ycnqLurNymyMOOZV81U3bWvx+SJbdUnNRVrn1C7KjIHsbUVQbDEXKKtp1jOxLdBaCVrqyu3GKsXF/lAa8bmxoMTEuIkSyHOR3ka5ypaidmAaSoa30nwMY5mtjPNC3KZDYFUKQzMwGM6NflrLV6BEFck3c02dRikuU3FX4pfKKB8TdL0YHeLDyCFjlzo0cIlDKPPcwEPKfGI92FWaJxKKYheiaSK6K6sImkjb8KJmDtURpkSuPxtTS2xzerC3mLK/vna6e9arTP0qcqgTeSOjhUmQ6ai74Ticvux8y+nPnvVnunk7oaN3I/Q+ImOPkHG0UskusCiruSoOcNv1Nzjr9h0Z4hd9fTzaOxf/DeTTyWQaQOg77pQY0mE8dYBT4gTxFAPkvjvh7jtATtEn3pQj88cBm+6hwnZYFBqUjkxPGGmR/Avqjy84CumvsL8lvS4/qMoPWv8HG2uprwe7t7B9IQYi/HTR6C37/tHYJ+5j9g/QfXyYPwbXAzjuB/4Yyn7kHwIlHYMHJBw5fOJR83/rBQ7QCspRTCYkmLCJHx8Ryps/xB5+YyILAAA=</values>
@@ -492,10 +492,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 11:48:14</sys_created_on>
         <sys_id>338ceedac314c7100ccab1fdd40131eb</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:49:58</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:53</sys_updated_on>
         <ui_id>d7f9bd03-0434-4826-81e4-87c3a8f6f940</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Z227jNhD9FUHPritatzhvi00XCNB2i42xL4uFQJEjmygtqRKVxA3y7x1K1MWOlNs63WwbwA/ScMg5M3NmhoJv7KxSeaXKVfauLMU6tU+/fJ3ZItUyfL6xE5ld/ZqtBTtPS0VTBhe78pzbp7brnjAATplLPBYSx2GMxiTh3HOISyC2Z3ZKt4CaSmyhiAqQVIlLiHhV4EOWRlkO+JQVqHlJZaVVaaJAv3NR5pLuPh+I2UZIXoBBmdMCDeiV05uDJbXLIZI0Bom7328ywQC3C42bM+oRx/dC13GJ6zhxQCAIvDCIk4CGiwD12o0rDdxqgVstcGsA/PEuakioyVowWcE1ckQws+FaQcoB4SVUljCztzTlet+ukxRA+cdU9oKNSBWeZ2vl61L8jYd7jtZLAMPAoFnrXiMT0kbcoGgy3HrbBvkwFwaoczvrdWNIsgIGyp3AaJNbzAKHhFZSvX+6MfIkYwttrHHpY67jrumpQ05jaeLAMllt09+bbNkdtEOCGfHZOP2qEsMIuU6Vjr0qKsxDcrHJrj61Yf4g0hqSSZLMGJXdG1WqEHGldCxubJCwxXOiLc1zka6jvMguRb0Z0W7na4kvc11+aFOX5pwy7dsciUHnH1B+Vos/00JoP3/DY4wPDUK2i9qA3SHmvpqhZk+625o40V+VBm8PlFVUB7fjd70TtUtWiFy9Y9qIcVdn8GjNY4C79YksQ+cnh+DPcpxT/SN3GwexLoBlKX927zjrDdfdAxLi+YxMdI8YBt1jsHXKFxP4OtVDecvr79gbukJ6Uh3dLRKD6NVViSijhrTGt9r4g8R/Wa7vl1VPdbjOpWBC7ZXvPtF/MSrWQOUY09Jbhq5/MsX3E3+E79aqQT/h1MQcJK9mDo6F8r5MjM3HT4d3hsEZY814bOz9AQVD4tH16Cl5tzrWOB6Yvs90kRzBxcWRXHS/eeaPVtXo/B8L1w/R5r5vO5u6FCNm0GuDVN9taM+f2Hj6z6vm+LqFkWTh88kLf+jec+HHoyyD9PE+7Q91lEdmwTDX+w9M9W+8+o4P39nblfhRdTXoiw0d68/1f7us4oTwgAQkDt1ggWXleixgECwBCKHLhTMoq0GbrwFbNeCx8nrYtYeq65j3iPqst0vz6740Nzwp2QZ4JV+I/F0OWvInse/jh+DETAkW+9diTIGlNmAlmUR/9dsA7pQbhujFwLShuH9EiruLfYazbToEMcb2i375/8D618Duvi2+DL/PUwXrpsI1vBPHdV1nyXw37Fo75wBJEsZkAWS0td+L2ZBZdHbeuvWP1q2/auY1FsqGQhyYKBHISsvO278M9MIOmaBZ34uusuJP7UIvu/0HKfFd6HwYAAA=</values>
@@ -512,17 +512,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>5</order>
+        <order>6</order>
         <outputs_assigned/>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 11:33:27</sys_created_on>
         <sys_id>5329aed2c314c7100ccab1fdd4013141</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:49:58</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:53</sys_updated_on>
         <ui_id>8e2ef36a-6dad-4970-b3e7-6266ae35bb10</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1ZbW/bNhD+K4I+e56o19jfimYFAmzr0Bj5UhQCRZ5sYrSkUVRSL8h/H0lRsmLLzkudpVsDGEh0R989x3vudJfcumUjq0bWi/JdXbNl4c4/f5m4rNAy9futm/Py5tdyychFUUtcELjc1BfUnbtR4M8wUJ8EKCQJ8jxCcIZySkMPKRFyJ26B16BO0kZgycoilZsKlPga80bL4WvFGWEy7Q4oHWV1xfHmyh75xR5xBkfIinEqwEKtsFBeJAh3fruj0u5SjjPgytL7VcmI9s40+HCWBNEZCpPAC1DgeVmMII7DJM7yGCdnkTrXffHcenYWLfoDQZkfc4XAuikF1ZjUvUxUoBIKCspxjnkNE3eNC4plKTa9RACmHwu+FaxYIZU9Vx/+WrO/lfHQ0+dyUAESaHX9Y2ovrhW3KNoEdnGMXeWxTNgAvLvJ1sYn4Ep9DWM2hNWN2EBDG3+AIFBIvBy1UvXaETv+ncoqhRw3XL4/XYjoBCH6Jwox0CG26ftYGdXcDTS9cMZtzknJm3Xxe0tDt7+Qq2NV1R45f7i4mlqhgkrTVfPPkjG/XJU3nzqufWCFwWqVvCSY909YSsGyRurU3LrAYa0MpWtcVaxYppUor5n5sgpjPV1y9TDVLUY51e1niokGMlXVgacflPzciK+wYPoCflNm1JfvDPHTvxrtt70Cizg1F6YP1ESwSr4jOl8WnE7RCdrZIH+SrUGkplumCjLo50Gm9/vZs9vXubL+86I1bzpYliMaoxhlSRD7qoMFIYkJxDMAhPDM9wYdbEBHA9gxgB0N2LGIHx2abXMmcUaeWsUL9Dtj6ykNr6+YJxXMf4X1KvF12tLaxmacv3I1tDzZEudl6H9RSFi2d6DhnXlBEHgzEgVJT35KAfI8yZAPaJT8RzFbXrPezxuff2Q+j7y20SzxfvKQ+jieN9cftE9w5FwCKQv6/D6/dWyYDjkKI3JoUM1gZFA9Esv97r0/xLzisPrG9dfi+t5Um5YKss74gP04lyaMHb534lPsZJTgEHnRAar78YDqCzPGiN1R3RkAf3yIBza34LvZ3LpL3s3F2IaWQV6K4Uu4F/TLzvEd6gFn6EnO/G/eZnrejW4wnXanB0jRfI8toENINumxjXJwzFJzS7qH+sX9v0q8SvP4l/cglPsRPdg1kuBI19jffx4R00MLUPg/eId+Y/2Mv+omb3X1hLqqyQpow1+oivqsdlWUZ1GkBs0DVRT798dMlTxHrsDJS67i1U8DuIfCsHcuBq5tyUQnLJnAv18yZF0MQYyVz+VW/SOMos8dOb9oJraW6pZSFAirlcOFll10/zLQio0iga6BreimFH9qqFvZ3T+Ob9PxfBgAAA==</values>
@@ -546,10 +546,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 19:25:42</sys_created_on>
         <sys_id>a11242bdc310c3100ccab1fdd40131d6</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:49:58</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:53</sys_updated_on>
         <ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VUWvbMBD+K0PPSZBsJyx5KxuFQrfCWvqyFXOWzomYInmW3DYL+e+7s522dC0bo497CETfne6+73Qf3ovQpaZL8SqcxGjXXqy+3kyE9YzR/72oXbg7D2urz3xM4DVe7uKZESsBSmVFVhmdK8k/qTVUqjamkCpXZiEmwsMWKVMHb2yywZc9MBG34DoOnDRNG27REGRsbBzsrn+P6I11psWRWQMt1UjYitX+WSjtGiwdVOiowGVqrV/Tdctcawm1Wmql82yRZ1Jm7wtVLfJKZSYHhJzyjhc/HMm+O++R11VwP8LjsVNoDdNSciLwPqE3RH9Vg4s4EVvwBlJodw9Ii2AuvHsENtYnKic4+T7an1Q7m885sUbSqHEIPhzLcWQDrDfBarxomOCAJKjceEcH123950EHDxtr6Fw6DpuQLlI9bJg0sxgp1ZebcPfl2PDU+l7gGHRBg3s4QaIxVF3CyA+DDrdUqNxC09BwSn5M218mLtvZ2tFhxptFTXnrZqCZ+IxmBLNTwj/28DW0llV8ojJ0eaBZQbS67DeUyqWWJBz6sZQ/OiY0CByllMM0KCHq1jbphPrc4sj6MHnb9X6y2fu9hqLSsJBTNEZOC7WspiBRT5XKl/lCqSKvixn0aw6upN4JD4dvnZS5gVdt8VZl38JTS5jXcyXnL3uqWLzkqZeH9oqRsj8YiZ/+L30kpfxvpKdGsrEcDDFq65v/s49uePGHDnHYG4PaRiJyxdjZ8WvCgR0tALvtEboL7XeW8IgdfgF3Kn9xlwYAAA==</values>
@@ -573,10 +573,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-17 20:38:34</sys_created_on>
         <sys_id>b4c256fdc390c3100ccab1fdd40131a6</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:49:58</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:53</sys_updated_on>
         <ui_id>b68c8257-595e-4547-a76d-0a2db33109da</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -1088,7 +1088,7 @@
         <description>Workspace Reservation Flow &amp; Discord Notifications</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>workspace_reservation</internal_name>
-        <label_cache>[{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["workspace"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location.name","label":"1 - Get Catalog Variables➛select_workspace➛ Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location","label":"1 - Get Catalog Variables➛select_workspace➛ Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_451445_wrm_workspace_options","column_name":"location","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"ca4bca60-edd0-419b-a0ec-1139361143f4.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"2358b799-1fb5-4458-ba11-f4a8d1a2c62c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.16e70d3dc35883100ccab1fdd4013146}}","label":" Workspace Agents","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"ca4bca60-edd0-419b-a0ec-1139361143f4":["approval_conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087":["requested_item"],"ca4bca60-edd0-419b-a0ec-1139361143f4":["record"],"efa3c835-b2da-41f5-97b4-c312e6207984":["record"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number","reserved_for","workspace","number"],"c5cc896a-60a9-4826-bef1-5b92994a0a87":["record"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["record"],"f3cdb683-8d09-43ae-80ef-f09447e96e23":["record"],"9addce94-399f-499b-8a42-3aa18a4faaaf":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null,"ah_to"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"Service Catalog_1.request_item.work_end","label":"Trigger - Service Catalog➛Requested Item Record➛Actual end","reference":"","reference_display":"Actual end","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_req_item","column_name":"work_end","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"]}},{"name":"Service Catalog_1.request_item.number","label":"Trigger - Service Catalog➛Requested Item Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number"]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.purpose_of_visit","label":"1 - Get Catalog Variables➛purpose_of_visit","reference":"","reference_display":"purpose_of_visit","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.email","label":"1 - Get Catalog Variables➛reserved_for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["ah_to"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["reserved_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["start_date_time"]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description","description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location.name","label":"1 - Get Catalog Variables➛location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}}]</label_cache>
+        <label_cache>[{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location.name","label":"1 - Get Catalog Variables➛location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description","description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["start_date_time"],"be068acf-a300-4203-9490-daf8791b7205":["start_date_time"]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["ah_to"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["reserved_for"],"be068acf-a300-4203-9490-daf8791b7205":["reserved_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.email","label":"1 - Get Catalog Variables➛reserved_for➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.additional_comments","label":"1 - Get Catalog Variables➛additional_comments","reference":"","reference_display":"additional_comments","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["additional_notes"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.purpose_of_visit","label":"1 - Get Catalog Variables➛purpose_of_visit","reference":"","reference_display":"purpose_of_visit","type":"multi_small","base_type":"multi_small","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["short_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"Service Catalog_1.request_item.number","label":"Trigger - Service Catalog➛Requested Item Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"number","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number"]}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"]}},{"name":"Service Catalog_1.request_item.work_end","label":"Trigger - Service Catalog➛Requested Item Record➛Actual end","reference":"","reference_display":"Actual end","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_req_item","column_name":"work_end","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.start_date_time","label":"1 - Get Catalog Variables➛start_date_time","reference":"","reference_display":"start_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["start_date_time"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["start_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for","label":"1 - Get Catalog Variables➛reserved_for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["reserved_for"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["reserved_for"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["reserved_for"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null,"ah_to"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087":["requested_item"],"ca4bca60-edd0-419b-a0ec-1139361143f4":["record"],"efa3c835-b2da-41f5-97b4-c312e6207984":["record"],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["request_number","reserved_for","workspace","number"],"c5cc896a-60a9-4826-bef1-5b92994a0a87":["record"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":["record"],"f3cdb683-8d09-43ae-80ef-f09447e96e23":["record"],"9addce94-399f-499b-8a42-3aa18a4faaaf":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.16e70d3dc35883100ccab1fdd4013146}}","label":" Workspace Agents","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"ca4bca60-edd0-419b-a0ec-1139361143f4":["approval_conditions"]}},{"name":"ca4bca60-edd0-419b-a0ec-1139361143f4.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"2358b799-1fb5-4458-ba11-f4a8d1a2c62c":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.end_date_time","label":"1 - Get Catalog Variables➛end_date_time","reference":"","reference_display":"end_date_time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["end_date_time"],"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]},"attributes":{"catalogType":"10","catalogTypeLabel":"Date/Time"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.location","label":"1 - Get Catalog Variables➛location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null],"9708bcc2-14a5-461b-a1ee-61f5e6643919":["location"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.workspace_name","label":"1 - Get Catalog Variables➛select_workspace➛Workspace name","reference":"","reference_display":"Workspace name","type":"string","base_type":"string","parent_table_name":"x_451445_wrm_workspace_options","column_name":"workspace_name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location","label":"1 - Get Catalog Variables➛select_workspace➛ Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_451445_wrm_workspace_options","column_name":"location","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"6ff5b8a3-c36f-43c8-a2b7-aa9950bcd087.select_workspace.location.name","label":"1 - Get Catalog Variables➛select_workspace➛ Location➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_location","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.select_workspace","label":"1 - Get Catalog Variables➛select_workspace","reference":"x_451445_wrm_workspace_options","reference_display":"Workspace Options","type":"reference","base_type":"reference","column_name":"","usedInstances":{"9708bcc2-14a5-461b-a1ee-61f5e6643919":["workspace"],"025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14":["workspace"],"5b79cbf3-82c0-4ec8-a628-dde7b1e8f1de":["workspace"],"914f73c5-501a-4efd-b10a-7b6c0a07cabc":["workspace"],"be068acf-a300-4203-9490-daf8791b7205":["workspace"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"9addce94-399f-499b-8a42-3aa18a4faaaf.reserved_for.name","label":"1 - Get Catalog Variables➛reserved_for➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"5083b947-7c28-4bc4-bae9-48b9a31d4f31":[null]}},{"name":"9708bcc2-14a5-461b-a1ee-61f5e6643919.record","label":"5 - Create Record➛Reservation Tracker Record","reference":"x_451445_wrm_reservation_tracker","reference_display":"Reservation Tracker","type":"reference","base_type":"reference","usedInstances":{"be068acf-a300-4203-9490-daf8791b7205":["tracker_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Workspace Reservation</name>
         <natlang/>
@@ -1105,7 +1105,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9ed5198ac39807100ccab1fdd4013107</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1113,7 +1113,7 @@
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:03</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -1197,14 +1197,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:54</sys_created_on>
         <sys_id>5ed5198ac39807100ccab1fdd401310c</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1281,14 +1281,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:55</sys_created_on>
         <sys_id>5ed5198ac39807100ccab1fdd401312d</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1326,7 +1326,31 @@
         <trigger_type>service_catalog</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9ed5198ac39807100ccab1fdd4013107^sys_idNOT IN5da45712c398c7100ccab1fdd401314f,7df0be16c354c7100ccab1fdd401318f,92d5198ac39807100ccab1fdd4013153,96d5198ac39807100ccab1fdd4013155,9ad5198ac39807100ccab1fdd4013168,9ed5198ac39807100ccab1fdd4013158,a4a3ea1ac3d0c7100ccab1fdd40131a0,d2d5198ac39807100ccab1fdd401316d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9ed5198ac39807100ccab1fdd4013107^sys_idNOT IN085d528dc3e4cb100ccab1fdd401310e,5da45712c398c7100ccab1fdd401314f,7df0be16c354c7100ccab1fdd401318f,92d5198ac39807100ccab1fdd4013153,9ad5198ac39807100ccab1fdd4013168,9ed5198ac39807100ccab1fdd4013158,a4a3ea1ac3d0c7100ccab1fdd40131a0,d2d5198ac39807100ccab1fdd401316d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Discord Approval Notification">3c5f0239c390c3100ccab1fdd40131cd</action_type>
+        <action_type_parent display_value="Send Discord Approval Notification">1e5ac2bdc350c3100ccab1fdd401315a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>3c5f0239c390c3100ccab1fdd40131cd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Workspace Reservation">9ed5198ac39807100ccab1fdd4013107</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 23:44:55</sys_created_on>
+        <sys_id>085d528dc3e4cb100ccab1fdd401310e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 23:44:55</sys_updated_on>
+        <ui_id>be068acf-a300-4203-9490-daf8791b7205</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW227cNhCGX2Wh6+VWlKgDfVckMFCgrQHbSS6CQBiRQ5uITqEoH7rwu5c67K582MQu1k56Y6yHQ84/P+cD9XntaekdeYmIlB+EXITcFyH1fSEgp0pK5tOQIvWWXgUlukyDLZorlJmqjYteQdH14fWag5QCOSMh54owznOSAgtICEDdDwUAajXffXfn9kvdNgXcfpyOcRFxqQtpsPKOPn9Zeg0YV9ei8Y7WD5aeK7yAHAuXejrVXhwPyp/ux942Y1ShKyRwCv25PWMXr43sZdGlhzcWK4lOj4KixaVXQiXB1uZ2GzEI8qQqdoFLXdmx4RJuWv2PqxoGy1nhI6+9bbPOqfNm4WwyzC1/GJfUe7BwZk0nbGe2HtZaYDv6JFFBV9h389iYcNJYXVfjFgt58aCoqIuurP4effK2B83uyiVmEpu++b6bqTV1dllfb5061tXg07RY1AKKWSqCEZfHGov+Noc7WXpgrdF5Z3u1a6/T548vZQw+dS1YYOnUZCU0ja4ussbUV3pQ4BoqVxeF+2elivraKW/1RbUC0buwchcGq2MXfz+EP4LRvSV/uWMGNzr9odLfOvyjF5onqOIkQsLcYBPm85ikPE+JSKNICJRBKlLvbtm7+a6Att2Z6JrIvnW9BaOlk3nZeA/9FmF0Y393oq5w8uluucGUfXfaYTfW17X52jYwOPJCRlvnoLDZ9oTDcPpj5RtOP82kP9HNywkNXo3Qm4xFlLEouzblzrCsHrhq93C77W9xss07MMQ/1PX2aO9U/G8gFyL3lcKYxDx0pKcJJXkaBSSKEhEnOY+4ZK8AOaPfQ0XNsGgtGJu5njCzuvwvqN8/4CCkP0P+hvSzvvzCjT4uzkf9exubqB8u9tHCZkL6k36bTprYDw/GPvPvs7+H7sPD/Da47sHxseH3oZxb/iZQoh8lIQ8YUT4PCItDIJxjQIIk5oKqEBR9DSgFgODgSxEiE/nDqfaj3exaA+IrmsygcDN4n8nET3MhAkIZRE47zQlQRBJTFWEcs5BTvhr3HQTFZ4jeoHg+ql6cblTv6+blzy97m+d3/JCHfqKySfUeRE93mYvzbeZrPsFPa/sJ39ddmQ+lf/3HV3KqVA6chDJwj2/u/kAgqYM9ke5FY5CwQ35hf/kX7pGlgQoPAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=085d528dc3e4cb100ccab1fdd401310e"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Send Discord Rejection Notification Action">b0c09eb9c390c3100ccab1fdd40131bd</action_type>
         <action_type_parent display_value="Send Discord Rejection Notification Action">577f4639c390c3100ccab1fdd40131be</action_type_parent>
@@ -1400,30 +1424,6 @@
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=92d5198ac39807100ccab1fdd4013153"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Send Discord Approval Notification">3c5f0239c390c3100ccab1fdd40131cd</action_type>
-        <action_type_parent display_value="Send Discord Approval Notification">1e5ac2bdc350c3100ccab1fdd401315a</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>3c5f0239c390c3100ccab1fdd40131cd</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Workspace Reservation">9ed5198ac39807100ccab1fdd4013107</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-18 10:50:55</sys_created_on>
-        <sys_id>96d5198ac39807100ccab1fdd4013155</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-19 14:04:44</sys_updated_on>
-        <ui_id>025c5dbf-6c6d-4f8c-b9f8-dc88f3658f14</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/9WTSW/bMBCF/4qhs+RqtUTfigQGCrQN0CTtIQiEETWMiVJLKMqOa/i/l1psK4uzFE6A3uxHaubNG35Xa4OnxtQIacBs1yPUIzb1HNumFBKHpalvO56DjmEaOWSob0qsUC4wjVkhtboAUTfyek0gTSkS3/IIYZZPSGJF4LuWB+DoHwwA2Hj49Wajv095VQpY/ezLaIXOuUgl5sb06to0SpC6r0JpTNcPjl5rXECCQl/90fcezVrnT8+jVmWnMtSNKPbS112NvV7ItLHlmAbeKcxT1H4YiApNI4M8BVXI1U6RCOlZLvbCnOeqGziDu4r/0V091xw0nhrVqopr7c4YyHEfmD6+7I7YKSg4V7Kmqpa7DAtOsepySpFBLdTJUOsunJWKF3n3iYJEPGhKC1Fn+fcuJ2NXaLArfTFOsWyGb6bpR2Pn82K5S2rG8zan/lAUFMTgKoKk8xlH0Wyz3YlpgFKSJ7Vq3K6Nml88XkonPrUWFJhpN3EGZcnzm7iUxYK3DvRA2fhG6D9jJoqldl7xm3wMtElhrBcG45nWT1v5J0jeRPJNl2nTqPllzm9r/NIYTUJkkzBAy9cP2/JtMrEikkQWjYKAUkzdiEbGxmzSPBFQVfsQ9RDxbd1E0EXahxd3e2g+oZKX6rM2tcA+p425xdR/9rXD/lkvC/m7KqFN5I2MVjpBquJdheNw+rLzLae/BtafmObthLrvRuhd7AeO7wfxUmb7wOKi5ao6wO1uvtHZ7t6RIX7R18ejvXfx30BOaWIzhhNrQjxNehQ6VhIFrhUEIZ2ECQlI6r8D5L7zHCpsgEWlQKpYz4Sx4tm/oH6/wFFIf4X9LennTfuRfvo4uuj8Hxysp75d7KOD7QtpKn3qK/Xse0dj37fvs3+A7uPD/DG4HsDxceD3oRxG/iFQoh2EHnF9i9nEtfyJBxYh6FpuOCHUYR4w55hQXv8FflpZ5SILAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96d5198ac39807100ccab1fdd4013155"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
@@ -1456,16 +1456,16 @@
         <display_text/>
         <flow display_value="Workspace Reservation">9ed5198ac39807100ccab1fdd4013107</flow>
         <generation_source/>
-        <order>7</order>
+        <order>5</order>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:55</sys_created_on>
         <sys_id>9ed5198ac39807100ccab1fdd4013158</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:03</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>9708bcc2-14a5-461b-a1ee-61f5e6643919</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WS2/bMAz+K4HOaWDVTpbkNrToaQ9gHbrDsgq0RCdC5cckOW0W5L+P8iNNuxZrhl0KNKeY5PfpI0Xa/L5lWrE5m3CMxjM+kTGP49MoOp0mPJ3EKT9VMSAmbMgKyJEiPaQGRfMwZGswdTDeiWTMk2Qsbm0uLDq0a/C6LIS3IG/QUqjSrjKwueoQX+6DBl/3QXKljbJYsPn3H0NWgaVjPHnm20eul4o2kKKh0K9B9TNJ+E31pO3DIXbwqXWUVgU90ZDhncdCIQnJwDgcshwKBb60Gzb3tiaDRVCfC7PZR6x04YmQhdg7p3/RsdMoxGVImUlsfftH0dWsNWfn4OGSmKWvbRcqV6WW6NqaKMygNv7s0NYGfK5CnVtIk2aHLk2dF5/akrA9QX9FZKkdicAq5BmUd2lkl6vy9kuv8kIXTUk6pyklmP0TeG91WvugZ8vQYE5EIoeq0sVSVLZc6wZMWvLR0tDDKDPlLR3q9LIYgQzCR1RWGF2Q/bwxX4HVIYuPREPg3ZC5jTsz4Nx9LlRE8bMOStrMuhxEW4YAkVZX/j0dsMZO7m7YT4PCaPZsY/H0vpGaAXAHk2DxJxm8KOo8RbuooyhW2+0l9Trdw+CMEjHlUvBRH6c95rvddTszqERW7kEzUEriLDmJZ7PsJJnN0pMpJKcnMQCnPxkAZKNDIPHclvbGVSDxKBJHFyO92IOJyHmwXlDhUXidH0n3EEtsVPx/5HqAJKbQXqEnjiLpQftCty8n0ulr1zKF/ggtKVcob4QurolXhygwoiipf4868ABMjR163tHZ1NRN0x0r/wDX3ozvasivqedpIJqhWtqyrjreRf+6XbD5gg2+9Rc7eL8MWhZsuGg7tvHzCb6LVKxkPJ5OYx5FUkLKM6WSiMc8mTThNGJCqxfG7/584b8NxttgvA3G7vgl5+/fon7JudBolHvi49RvOJhT6tQy7cfq0ZbTOQdXnbPbdPj/2nT4JGp+r2jfaZN79evOwWb7zOLz4zccvvkOCAwAAA==</values>
@@ -1480,16 +1480,16 @@
         <display_text/>
         <flow display_value="Workspace Reservation">9ed5198ac39807100ccab1fdd4013107</flow>
         <generation_source/>
-        <order>6</order>
+        <order>4</order>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 11:09:14</sys_created_on>
         <sys_id>a4a3ea1ac3d0c7100ccab1fdd40131a0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-19 11:34:14</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>f3cdb683-8d09-43ae-80ef-f09447e96e23</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVTW+jMBT8K5HPCEFIoza3VaJIlbqtlKxy6XaRsR+JJWOobdJmo/z3fYAhKKnaVOqlWm7vy54Z5sHjnghOJmQEPAhvwjGLwigaBsHwehQm4ygJhzyiACHxiKIZYKcGlmuO8ZbKskrs90vQW8FgMKWWynwdh76G5xKMjYWF7HDAZi5MIelu5WYwwzZCcg2KTB6fPFJQjcdb0GSyPyldik/SBCS2LlqAp4DtrqhinrMyA4Xg2uSdm5y5yuB2hhUcquCEgUfg1YLigEBSKg14JKOKU5vrHZlYXWJCA+UPSu66jo1QtiGa0Vcj/uLNo6DqSwGZMSdCF8ZOoCadzlDJJZ7MbKk7vXLU2DSacEhpKe20n2saHgorctWMWJrIdjqXZabuG0VId0DvfZQGQUBR8ayQN7TS5SZ/WbQg50LVkjiKMmdUdhG1VouktBWcPQEJtcYZLQqh1nGh862ohxFK5q8lBn4q8xe804i18imrcPuoKvXnmJ/V6RXVoiLxE4/B4YNHzM5MJTXmSAU1jJ/LCklDzFGIaxVqCeLaCdUw06KwP/CqLTjgB89tQHL1nsPYzdFQvTOPW2BYjKavDX9u90WzDsAHt039c+a/AFpr/l/1K38bqvP/We6uPzu4bwrO/Vdf5v7r7+R+R+Pb2/8j0wfDdz+rPSfVPjd9w1tq4XcZBBGP/mCwdgHyKySa+XwLLpj43F5cgL7di7kAyc0bdNqlAMSA8OKG3sliuOJg5Yrdr+HLtiMcB/XzjXbkv/lDPP0DsACMMiUJAAA=</values>
@@ -1539,10 +1539,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:55</sys_created_on>
         <sys_id>1ed5198ac39807100ccab1fdd4013141</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:03</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>b68c8257-595e-4547-a76d-0a2db33109da</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -1566,10 +1566,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:55</sys_created_on>
         <sys_id>9ad5198ac39807100ccab1fdd401313f</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:02</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPTpBsJyx5Ky2FQLbCWvqyFXMtyYmYInmW3DYL+e+713aS0rVsZX3cQyA69+vck3vIjvk21m0MN/4sBLNybP71LmHGEYbfd6yy/mHpV0YuXIjgpL7ehoVicwZCpHlaKpkJTh8uJZSiUirnIhNqyhLmYKMxU3qnTDTeFR2QsHuwLQXO6rrx91ohpEyoLWxvf4/ItbGq0QOzGhrsEXXD5rtnIUOsKg6VmEkhs3SapZynH3NRTrNSpCoDDRk2tFBqi6nnB1oflh3yOt+4rQkPsTFuNbyXQ5frA+gbRawET5h+jNopZD+vwAadsA04BdE32yPSaFBXzp6AtXER2zFKfgzmJw5MJxNKrDSuKHUfPD6LQbEeri4gAlJpZWybIVWuvZE69OIoXUFr4/lTrE+4qmnVviRCaQ/V3rYb97lXhB0bHH4gRNqAJHRNmxL1YY/qeu0fvhxYXhrXqTIErZdgjy+IqF3ZRuKzY9rqDTYqNlDXqGhBB2C6YuSyGa8sPsZ0jTiULnUMkoiPUVgYXyJ+0cG30Bja4hO2weKeZgnByKK7amyHMmm2T1jYhnMLIZyWRHWLHy1R7Fcelit6fahENqaOZzj5Xg977JP3NckTf+x2EvJSwpSPtFJ8lItZOQKu5UiIbJZNhcizKh9DZxawBc6Oer//1nKeKXjVXO/V9m3OnMGkmgg+edmZ+fQlZ74sz1vsmP7BjnQLf+lGzvl/O/6zHU0oehMNu3XD39GNd2SffuZRa2kCUrshbHH4Z6PAFo+LPHuCHnzznZY6YftfB9KwvSMHAAA=</values>
@@ -1586,17 +1586,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
-        <order>5</order>
+        <order>6</order>
         <outputs_assigned/>
         <parent_ui_id>2358b799-1fb5-4458-ba11-f4a8d1a2c62c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 11:34:13</sys_created_on>
         <sys_id>ae59a616c314c7100ccab1fdd401310f</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:03</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>8e2ef36a-6dad-4970-b3e7-6266ae35bb10</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Z227jNhD9FUHPritKlhT7bZE0QIC0W8RBXoqFQFEjmygtqRSVrBvk3zvU3bbsjTferQMEMJBwhhqeuZwRx34200Jlhcrv0095zheJOfvry8jkiZbh/89mLNKn23TB2U2SK5owmK/zm8icma5jTylENnPIhPnEshijIYmjaGIRFBFzZCZ0BbgzKiRVPE0Ctc4AxY9UFFoOXzPBGVdBswF1Ec8zQdcP9Zbf6i1GbwtbchFJqKFmVOIpCqQ5e95ScQ1zMvUd94JMfMdyiGNZoUfA8ya+F8Ye9S9cNChoCAK3XtVnGPcVzj3wyz8zPCvlrFnf1iYuG2EqIw0JwzJCPxUkESCamIocRuaKJhFVqVy3Egk0+pyITrDkiUJ7pt78Nef/4okTS++LAf1jUOnaZVDHrRLHV1TRuZIFU4Wst1Zwq5w2Dg9F91Byaqesl1Fn4w4Eqh9hyIasdQM2SN/GnyAZJIouBq1krXbAjv2CiY4gpoVQl6dzkZzARftELjraxSp9n7NSNTMdXXc0FE1yU1Gskj+qejXbgDwcIlq15erbfCtyRAWZLmFdk3WBxvNl+nTX1N81T0qstVKkjIp2RZWSPCyUTs2zCQJWaChY0SzjySLIZPrIy4fRjdV4IXAx1l0HD9UdaUyZBjJGxtDxNcqvSvEDlVwH4Hc0gw+/jMx8nV8KmuddGJAewT+FRlIFpfYhKENYPsIkz9QnpjNYw9VJO0HP62VU8RXIoGypAToBet3L/W7TO7rHhTGJPOKR0Hc8G3ucM2EeA28KQAid2lavx/XqsMRllLgMjcuogb3ag7oRlhkr5UFP0XREbEXw630l/wFNsbR1iq441EZ2eXcU7d4Ld7CK8qCiQu1befjZcaoqw64uT0uiC8txHGvKXMdvSRRFAHHsh8QGMkiig+BqfmDRwqIMc58XN630gxUfrHgzKwYuFWTqW79YBD+GZc30h+zShBhzYGkSHU0XiMnEZfvu1SEM3KsPYN58lWzKb3fNNDesM7xdfzDmnTBm5+YepOiELpweh2isSse2WNOIj6NMxOiEWO4eythejzL35d1Mbg8eRg/i6505ZmB1zpBS3RTVxH07PUODaQhxKvt3hFbQzniHR8dvHEaOOsx+8xDXluLg4NZotxoFhvQc+0SDkK2DQ4N0b1tdw10hHt9UNr/H+V86zI8Z/0hsu9HevuI7B/rK7tj3CujfO/dNzrC3/JTX9RtZOPxWHX2w803szNkSokKcmItx6Lp4Md7DRc/evBZj1gy1BCNOBbqlVz1U+9DWwe6qf5N4dz15TTz3hMRz7E3isVXSBzdEwnmnPgMyHn93judAJVtecxA6xWVe3tu3ml90lVe220gzniOEey27aX7w0Yo1eqj51YmeUvm3Bt/JXv4D3OyBBzoaAAA=</values>
@@ -1620,10 +1620,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-19 12:07:29</sys_created_on>
         <sys_id>f9f0be16c354c7100ccab1fdd401319e</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:03</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:56</sys_updated_on>
         <ui_id>d7f9bd03-0434-4826-81e4-87c3a8f6f940</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Z227jNhD9FUHPrivqGudtkTRAgLRbxMa+FAuBIkc2UVpSKSqJG+TfS0rUxbacXWe9hYNdwA/icESeuZyZUfJs55UsKlku8g9lyZaZffnX54nNMi1Tz892yvPHu3zJyG1WSpwRmG/KW2pf2p53QQAoJh7ySYQchxCcoJRS30EegsSe2Bleg9KUbA0iFsCxZA8Q00qohzyL8wLUUy6U5gPmlVbFqQS9pqwsON582hGTFeNUgEFZYKEu0DuXzztbTCOkBPvICfzIczzkOU4SIghDPwqTNMSRG6oDOU6AK9WFhmi1EK0WojWA+PXGyE2hNckqZwTM+s5cdNUKc0E1cAVrYsOThIyCwpxiXsLEXuOM6sM2nUQAph8z3gtWLJPqPFsrP5XsX3Wj72i9FJQXCDR73TI2Hm3E6TWWeC5FRWQljGoDtwl665bW77vhMeCdl0mvm0CaCxgodwKjjV5UYCikuOLy6vjL0FGXufqyxqSPhQ6QzlgdC5zw1uCcV+vsjyasdgdtN+eM+Ho8I6tSuRYKHT4dD+VSFZt0vsof71vX37CshmQCx3OCebfCUgqWVFL74tkGDmt1TrzGRcGyZVyI/IHVLyu06+mSq8VUM1Ldqdk6xUTbNlXJgqc3Sn5diz9hwbSdv6tjjA0NQrKJW4ftZfC2msnhPhFfJna5Ka84LsveZSq94n8qbY49eF3Gtbs7atRn6feJYIX8QPS1xgE6pierMANLWivRLHJ+cZD6WY5zqX9ov7ogaw4kz+jRBQZS5AcEHSgwCQwKzHWP7RBm4/I6yLvyu/1j2kQ/wwIyxvN9Oh7Fxn2qGTPOjmusjJtEN7bVl7+BPt+XMdvk7AkDTwVnhMmtsrBNl9+MijVQOY43/izygotDvLkIRnhjLRqcB+Af03LRGTKm72xj3n0tOGOt+H53jhmcMVb3xzrsnyCIykW8HD2l6HZHznG/0OjfaCI6gYnuiUz0vnm8GCXa6Kgx5q53UQvPreYdGt2VFaD3BsHfr3pHFzmUugE9+PURea98fSg8lgH09dC3xwcljwcb3fyg5L8uGrlJZf8My+H/MkB846w+3ucnP2f4N7JzUG+bbK//CPGdyJmkiIYoREnkha4ip+eTkEA4A0AIz1xnQM5Bl6hxWTWuMZJ+2YK3cvSUI0t91rsh6Xl2tvcy5TdpWJIV0IqfmEJpEgTq8/dAfwvd7SFe+d6SK7DSnCuz9GqA6hBaQ5c+WbeJcj+QG6IEJySK527zhKyzIbgxzsz77XfJnXQOWJDVDQOuQ1zH5UeeFfuKflruXDie5zkzEnhR134oBUjTKEEuoNH28yo4QxWVxbAEsUOU2076s5/8oP3ks87f5s7O14SVCtpCy27bf/jojY1KM82dXvSYi7+1Ub3s5T/Wj7EbOhoAAA==</values>
@@ -2132,17 +2132,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"7ad5198ac39807100ccab1fdd40131da","name":"plan","plan_signature":null}}</plan>
         <plan_id>479a65bdc35c83100ccab1fdd40131fc</plan_id>
-        <snapshot>d8cc3f6fc39803100ccab1fdd40131d6</snapshot>
+        <snapshot>279d9e8dc3e4cb100ccab1fdd4013119</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-18 10:50:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7ad5198ac39807100ccab1fdd40131da</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 14:50:04</sys_updated_on>
+        <sys_updated_on>2026-04-27 23:44:57</sys_updated_on>
         <trigger display_value="">f6d5198ac39807100ccab1fdd40131d9</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=479a65bdc35c83100ccab1fdd40131fc"/>

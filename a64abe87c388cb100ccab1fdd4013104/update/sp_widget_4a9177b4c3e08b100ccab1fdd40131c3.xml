@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function widgetController($scope, spUtil) {
+  var c = this;
+
+  c.checkIn = function(res) {
+    c.server.update({action: 'checkIn', sys_id: res.sys_id}).then(function(r) {
+      if (c.data.error) {
+        spUtil.addErrorMessage(c.data.error);
+      } else {
+        spUtil.addTrivialMessage(c.data.success || 'Checked in: ' + res.number);
+      }
+      c.server.refresh();
+    });
+  };
+
+  c.checkOut = function(res) {
+    c.server.update({action: 'checkOut', sys_id: res.sys_id}).then(function(r) {
+      if (c.data.error) {
+        spUtil.addErrorMessage(c.data.error);
+      } else {
+        spUtil.addTrivialMessage(c.data.success || 'Checked out: ' + res.number);
+      }
+      c.server.refresh();
+    });
+  };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Reservation Tracker with Check In/Out</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+  gs.info('WRM Widget - input received: ' + JSON.stringify(input), 'WRMWidget');
+
+  if (input && input.action && input.sys_id) {
+    gs.info('WRM Widget - action: ' + input.action + ' sys_id: ' + input.sys_id, 'WRMWidget');
+    
+    var helper = new WRMReservationHelper();
+    var result;
+
+    if (input.action === 'checkIn') {
+      result = helper.checkIn(input.sys_id, gs.getUserID());
+    } else if (input.action === 'checkOut') {
+      result = helper.checkOut(input.sys_id, gs.getUserID());
+    }
+
+    gs.info('WRM Widget - result: ' + JSON.stringify(result), 'WRMWidget');
+
+    if (result) {
+      if (result.success) {
+        data.success = result.message;
+      } else {
+        data.error = result.error;
+      }
+    }
+  }
+
+  // Load reservations for current user
+  var reservations = [];
+  var grList = new GlideRecord('x_451445_wrm_reservation_tracker');
+  grList.addQuery('reserved_for', gs.getUserID());
+  grList.orderByDesc('start_date_time');
+  grList.setLimit(10);
+  grList.query();
+
+  while (grList.next()) {
+    var status = grList.getValue('reservation_status') + '';
+    var isPending   = (status === 'pending_check_in');
+    var isCheckedIn = (status === 'checked_in');
+
+    var statusClass = 'label-default';
+    if (isPending)              statusClass = 'label-warning';
+    if (isCheckedIn)            statusClass = 'label-success';
+    if (status === 'cancelled') statusClass = 'label-danger';
+    if (status === 'no_show')   statusClass = 'label-danger';
+
+    reservations.push({
+      sys_id:             grList.getUniqueValue(),
+      number:             grList.getValue('number'),
+      workspace:          grList.getDisplayValue('workspace'),
+      reservation_status: grList.getDisplayValue('reservation_status'),
+      start_date_time:    grList.getDisplayValue('start_date_time'),
+      end_date_time:      grList.getDisplayValue('end_date_time'),
+      location:           grList.getDisplayValue('location'),
+      statusClass:        statusClass,
+      canCheckIn:         isPending,
+      canCheckOut:        isCheckedIn
+    });
+  }
+
+  data.reservations = reservations;
+  data.error        = data.error || null;
+  data.success      = data.success || null;
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 11:48:23</sys_created_on>
+        <sys_id>4a9177b4c3e08b100ccab1fdd40131c3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Reservation Tracker with Check In/Out</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sp_widget_4a9177b4c3e08b100ccab1fdd40131c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 07:55:00</sys_updated_on>
+        <template><![CDATA[<div class="res-panel">
+  <h4>My Reservations</h4>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Number</th><th>Workspace</th><th>Status</th>
+        <th>Start</th><th>End</th><th>Location</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="res in data.reservations">
+        <td><a href="/wrt?id=workspace_reservation&table=x_451445_wrm_reservation_tracker&sys_id={{res.sys_id}}">{{res.number}}</a></td>
+        <td>{{res.workspace}}</td>
+        <td><span class="label" ng-class="res.statusClass">{{res.reservation_status}}</span></td>
+        <td>{{res.start_date_time}}</td>
+        <td>{{res.end_date_time}}</td>
+        <td>{{res.location}}</td>
+        <td>
+          <button ng-if="res.canCheckIn" class="btn btn-sm btn-success" ng-click="c.checkIn(res)">Check In</button>
+          <button ng-if="res.canCheckOut" class="btn btn-sm btn-primary" ng-click="c.checkOut(res)">Check Out</button>
+          <span ng-if="!res.canCheckIn && !res.canCheckOut" class="text-muted">—</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_451445_wrm_workspace_maintenance</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Maintaince_Status _open</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+//Workspace option table
+    var workspaceGR = new GlideRecord('x_451445_wrm_workspace_options');
+    var ticketStatus =
+        current.getValue('ticket_status');
+    var mainWorkspaceStatus =
+        current.getValue('workspace_status');
+
+    if (ticketStatus == 'open' && mainWorkspaceStatus == 'in_maintenance') {
+        workspaceGR.status = 'in_maintenancee';
+    } else if (ticketStatus == 'closed' && mainWorkspaceStatus == 'available') {
+        workspaceGR.status = 'available';
+
+    } else if (ticketStatus == 'closed' && mainWorkspaceStatus == 'decomissioned') {
+        workspaceGR.status = 'decommissioned';
+    } else if (ticketStatus == 'closed' && mainWorkspaceStatus == 'available') {
+        workspaceGR.status = 'available';
+    }
+
+    workspaceGR.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 15:29:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8e3483fc3d803100ccab1fdd4013107</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Maintaince_Status _open</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sys_script_e8e3483fc3d803100ccab1fdd4013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 19:31:45</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=e8e3483fc3d803100ccab1fdd4013107"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</application>
+        <file_path/>
+        <instance_id>357f38c1fb3f4e50363cf633beefdce9</instance_id>
+        <instance_name>dev284713</instance_name>
+        <name>sys_script_e8e3483fc3d803100ccab1fdd4013107</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_451445_wrm_workspace_maintenance&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Maintaince_Status _open&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
+
+//Workspace option table
+    var workspaceGR = new GlideRecord('x_451445_wrm_workspace_options');
+    var ticketStatus =
+        current.getValue('ticket_status');
+    var mainWorkspaceStatus =
+        current.getValue('workspace_status');
+
+    if (ticketStatus == 'open' &amp;&amp; mainWorkspaceStatus == 'in_maintenance') {
+        workspaceGR.status = 'in_maintenancee';
+    } else if (ticketStatus == 'closed' &amp;&amp; mainWorkspaceStatus == 'available') {
+        workspaceGR.status = 'available';
+
+    } else if (ticketStatus == 'closed' &amp;&amp; mainWorkspaceStatus == 'decomissioned') {
+        workspaceGR.status = 'decommissioned';
+    } else if (ticketStatus == 'closed' &amp;&amp; mainWorkspaceStatus == 'available') {
+        workspaceGR.status = 'available';
+    }
+
+    workspaceGR.update();
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-23 15:29:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e8e3483fc3d803100ccab1fdd4013107&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Maintaince_Status _open&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Workspace Reservation Management" source="x_451445_wrm"&gt;a64abe87c388cb100ccab1fdd4013104&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Workspace Reservation Management"&gt;a64abe87c388cb100ccab1fdd4013104&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_e8e3483fc3d803100ccab1fdd4013107&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-23 19:31:45&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e8e3483fc3d803100ccab1fdd4013107"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-703101956</payload_hash>
+        <record_name>Maintaince_Status _open</record_name>
+        <reverted_from/>
+        <source>6f12ac3bc3dc03100ccab1fdd40131a5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 19:31:45</sys_created_on>
+        <sys_id>ac0d383fc39043100ccab1fdd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dbbd3af580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 19:31:45</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>6c0df43f3d904310d0bad3464ed02dff</update_guid>
+        <update_guid_history>6c0df43f3d904310d0bad3464ed02dff:-703101956,cf6790b39d9c0310c42775863603bdb1:-332966341,4d7614332b9c03102c142f87e7bef4e1:979291676,50d94cf7111c0310156becaab55f0ce4:2051914021,d4a50cffc1d80310ae1ddf21658f5d4f:-946988983</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 19:36:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>2002de7687dc4f4e888161e1b365d601</sys_id>
+        <sys_metadata>e8e3483fc3d803100ccab1fdd4013107</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Maintaince_Status _open</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_parent display_value="Workspace Maintenance">a1bd62e7c384cf100ccab1fdd401310b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_scope_delete display_value="">537389c6c0d04727832ef30c60e8d4e9</sys_scope_delete>
+        <sys_update_name>sys_script_e8e3483fc3d803100ccab1fdd4013107</sys_update_name>
+        <sys_update_version display_value="sys_script_e8e3483fc3d803100ccab1fdd4013107">ac0d383fc39043100ccab1fdd4013100</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 19:36:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

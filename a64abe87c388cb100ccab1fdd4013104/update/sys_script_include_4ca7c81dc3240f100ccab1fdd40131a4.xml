@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_451445_wrm.WRMReservationHelper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>WRMReservationHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var WRMReservationHelper = Class.create();
+WRMReservationHelper.prototype = {
+    initialize: function() {},
+
+    checkIn: function(sysId, userId) {
+    gs.info('WRMHelper checkIn called - sysId: ' + sysId + ' userId: ' + userId, 'WRMHelper');
+    var gr = new GlideRecord('x_451445_wrm_reservation_tracker');
+    gr.addQuery('sys_id', sysId);
+    gr.addQuery('reserved_for', userId);
+    gr.query();
+    gs.info('WRMHelper hasNext: ' + gr.hasNext(), 'WRMHelper');
+    if (!gr.next()) return {success: false, error: 'Record not found or unauthorized.'};
+    gs.info('WRMHelper status: ' + gr.getValue('reservation_status'), 'WRMHelper');
+    if (gr.getValue('reservation_status') !== 'pending_check_in') return {success: false, error: 'Status is no longer Pending check-in.'};
+    gr.setValue('reservation_status', 'checked_in');
+    gr.setValue('work_notes', 'Reservation checked in by ' + gs.getUserDisplayName());
+    gr.setWorkflow(true);
+    gr.autoSysFields(true);
+    var result = gr.update();
+    gs.info('WRMHelper update result: ' + result, 'WRMHelper');
+    return result ? {success: true, message: 'Checked in successfully.'} : {success: false, error: 'Update failed.'};
+},
+
+    checkOut: function(sysId, userId) {
+        var gr = new GlideRecord('x_451445_wrm_reservation_tracker');
+        gr.addQuery('sys_id', sysId);
+        gr.addQuery('reserved_for', userId);
+        gr.query();
+        if (!gr.next()) return {success: false, error: 'Record not found or unauthorized.'};
+        if (gr.getValue('reservation_status') !== 'checked_in') return {success: false, error: 'Status is no longer Checked-in.'};
+        gr.setValue('reservation_status', 'checked_out');
+        gr.setValue('work_notes', 'Reservation Checked-out by ' + gs.getUserDisplayName());
+        gr.setWorkflow(true);
+        gr.autoSysFields(true);
+        var result = gr.update();
+        return result ? {success: true, message: 'Checked out successfully.'} : {success: false, error: 'Update failed.'};
+    },
+
+    type: 'WRMReservationHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 07:30:05</sys_created_on>
+        <sys_id>4ca7c81dc3240f100ccab1fdd40131a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>WRMReservationHelper</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sys_script_include_4ca7c81dc3240f100ccab1fdd40131a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 07:53:36</sys_updated_on>
+    </sys_script_include>
+</record_update>
