@@ -10,7 +10,7 @@
                 <element inactive_on_update="false" label="Meeting room" sequence="40" value="meeting_room"/>
             </choice>
         </element>
-        <element display="true" label="Workspace name" max_length="40" name="workspace_name" type="string"/>
+        <element label="Workspace name" max_length="40" name="workspace_name" type="string"/>
         <element label="Image" max_length="40" name="image" type="user_image"/>
         <element label="Max occupancy" max_length="40" name="max_occupancy" type="integer"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
@@ -21,7 +21,7 @@
                 <element inactive_on_update="false" label="Decommissioned" sequence="40" value="decommissioned"/>
             </choice>
         </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Workspace" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Workspace" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="location"/>
         </index>

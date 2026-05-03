@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.assigned_to.nill() &amp;&amp; gs.hasRole('x_451445_wrm.wrm_agent')</condition>
+        <condition>current.assigned_to.nil()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,10 +30,23 @@
         <name>Claim</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.assigned_to = gs.getUserID();
-current.update();
-action.setRedirectURL(current);
-]]></script>
+        <script><![CDATA[if (!gs.hasRole('x_451445_wrm.wrm_agent')) {
+    gs.addErrorMessage("You are not authorized to perform this action");
+    action.setRedirectURL(current);
+} else {
+    // Assign current user to the record
+    current.assigned_to = gs.getUserID();
+
+    // Add work note
+    current.work_notes = 'Record claimed by ' + gs.getUserDisplayName();
+
+    // Save record
+    current.update();
+
+    // Refresh form
+    action.setRedirectURL(current);
+
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -44,7 +57,7 @@ action.setRedirectURL(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3af5db77c38843500ccab1fdd4013121</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Claim</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
@@ -52,7 +65,7 @@ action.setRedirectURL(current);
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>sys_ui_action_3af5db77c38843500ccab1fdd4013121</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-28 21:00:39</sys_updated_on>
+        <sys_updated_on>2026-04-29 15:32:28</sys_updated_on>
         <table>x_451445_wrm_reservation_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

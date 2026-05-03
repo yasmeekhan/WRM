@@ -40,11 +40,11 @@
     grTargetRecord.ticket_status = 'open'; // Use correct choice value
     grTargetRecord.workspace_status = 'in_maintenance';
     grTargetRecord.date_reported = new GlideDateTime();
-	grTargetRecord.reservation = current.sys_id;
-	grTargetRecord.workspace = current.workspace;
-	grTargetRecord.issue_description = current.close_notes;
+    grTargetRecord.reservation = current.sys_id;
+    grTargetRecord.workspace = current.workspace;
+    grTargetRecord.issue_description = current.close_notes;
     grTargetRecord.assignment_group = '8ddd3a2bc308cf100ccab1fdd4013133';
-   
+
     // Insert record
     var newRecordSysId = grTargetRecord.insert();
 
@@ -54,11 +54,15 @@
 
             var recordNumber = grTargetRecord.getValue('number');
 
-          gs.addInfoMessage('Created record on Workspace Maintainance : ' + recordNumber);
+
+            gs.addInfoMessage('Created record on Workspace Maintainance : ' + recordNumber);
         }
     }
+    // Add note to show maintenance was created 
+    current.work_notes = 'Maintenance ticket '+ recordNumber+' created.';
+    current.update();
 
-		action.setRedirectURL(current);
+    action.setRedirectURL(current);
 
     // Optional: Redirect to new record
     //action.setRedirectURL(grTargetRecord);
@@ -75,7 +79,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2a13bbffc34c43500ccab1fdd4013101</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Needs Maintenance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
@@ -83,7 +87,7 @@
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>sys_ui_action_2a13bbffc34c43500ccab1fdd4013101</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-23 12:52:29</sys_updated_on>
+        <sys_updated_on>2026-04-29 14:47:45</sys_updated_on>
         <table>x_451445_wrm_reservation_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

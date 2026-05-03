@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency>
+        <sp_widget display_value="Copy of Header Menu">4c74692ac32c87500ccab1fdd40131ea</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 11:27:19</sys_created_on>
+        <sys_id>4874692ac32c87500ccab1fdd40131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>angular-truncate.Copy of Header Menu</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_4874692ac32c87500ccab1fdd40131f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 11:27:19</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</application>
+        <file_path/>
+        <instance_id>357f38c1fb3f4e50363cf633beefdce9</instance_id>
+        <instance_name>dev284713</instance_name>
+        <name>m2m_sp_widget_dependency_4874692ac32c87500ccab1fdd40131f3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Copy of Header Menu">4c74692ac32c87500ccab1fdd40131ea</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-02 11:27:19</sys_created_on><sys_id>4874692ac32c87500ccab1fdd40131f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Copy of Header Menu</sys_name><sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope><sys_update_name>m2m_sp_widget_dependency_4874692ac32c87500ccab1fdd40131f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-02 11:27:19</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>-1588183885</payload_hash>
+        <record_name>angular-truncate.Copy of Header Menu</record_name>
+        <reverted_from/>
+        <source>814e74ffc39043100ccab1fdd401315d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 11:27:19</sys_created_on>
+        <sys_id>4474692ac32c87500ccab1fdd40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19de87166fe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 11:27:19</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>0474692af02c8750d770f7baa74bf4f7</update_guid>
+        <update_guid_history>0474692af02c8750d770f7baa74bf4f7:-1588183885</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="angular-truncate.Copy of Header Menu">4fad6daac36c87500ccab1fdd40131ea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-02 12:07:39</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>d5b724ae7aae44c8b3b3f95443fb3904</sys_id>
+        <sys_metadata>4874692ac32c87500ccab1fdd40131f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>angular-truncate.Copy of Header Menu</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_scope_delete display_value="">537389c6c0d04727832ef30c60e8d4e9</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_4874692ac32c87500ccab1fdd40131f3</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_4874692ac32c87500ccab1fdd40131f3">4474692ac32c87500ccab1fdd40131f8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-02 12:07:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
