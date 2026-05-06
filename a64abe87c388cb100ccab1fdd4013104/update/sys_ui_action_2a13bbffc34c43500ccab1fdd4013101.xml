@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.reservation_status == 'checked_out' &amp;&amp; gs.hasRole('x_451445_wrm.wrm_agent') &amp;&amp; current.state ==3</condition>
+        <condition>current.reservation_status == 'checked_out' &amp;&amp; gs.hasRole('x_451445_wrm.wrm_agent') &amp;&amp; (current.state ==3 || current.state == 4 || current.state ==7)</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -32,6 +32,30 @@
         <order>100</order>
         <script><![CDATA[(function executeAction(current, previous /*null when async*/ ) {
 
+    //Check if maintenance issue is entered
+    if (current.close_notes == "") {
+        action.setRedirectURL(current);
+        gs.addErrorMessage("Unable to proceed | Add Maintenance Issue in the Activity tab ");
+        g_form.setMandatory("close_notes", true);
+    } else {
+
+        current.update();
+    }
+
+
+ //Get Maintenace group sysid
+ var maintenanceGroupGR = new GlideRecord('sys_user_group');
+ maintenanceGroupGR.addQuery('name','Workspace Maintenance Team');
+ maintenanceGroupGR.query();
+
+ var maintenanceGroupSysId;
+
+ if (maintenanceGroupGR.next()){
+	maintenanceGroupSysId = maintenanceGroupGR.sys_id;
+ } else{
+	gs.addErrorMessage("unable to get workspace maintenance teaam");
+ }
+
     // Create record in target custom table
     var grTargetRecord = new GlideRecord('x_451445_wrm_workspace_maintenance');
     grTargetRecord.initialize();
@@ -43,7 +67,9 @@
     grTargetRecord.reservation = current.sys_id;
     grTargetRecord.workspace = current.workspace;
     grTargetRecord.issue_description = current.close_notes;
-    grTargetRecord.assignment_group = '8ddd3a2bc308cf100ccab1fdd4013133';
+    grTargetRecord.assignment_group = maintenanceGroupSysId;
+	
+	// '8ddd3a2bc308cf100ccab1fdd4013133';
 
     // Insert record
     var newRecordSysId = grTargetRecord.insert();
@@ -59,7 +85,7 @@
         }
     }
     // Add note to show maintenance was created 
-    current.work_notes = 'Maintenance ticket '+ recordNumber+' created.';
+    current.work_notes = 'Maintenance ticket ' + recordNumber + ' created.';
     current.update();
 
     action.setRedirectURL(current);
@@ -79,7 +105,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2a13bbffc34c43500ccab1fdd4013101</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Needs Maintenance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
@@ -87,7 +113,7 @@
         <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
         <sys_update_name>sys_ui_action_2a13bbffc34c43500ccab1fdd4013101</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-29 14:47:45</sys_updated_on>
+        <sys_updated_on>2026-05-06 16:49:19</sys_updated_on>
         <table>x_451445_wrm_reservation_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

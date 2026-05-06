@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name/>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_451445_wrm_ondemandimport</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-04 17:38:49</sys_created_on>
+        <sys_id>f69c0157c3a40f500ccab1fdd40131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_update_name>sys_transform_map_f69c0157c3a40f500ccab1fdd40131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-04 17:38:49</sys_updated_on>
+        <target_table/>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</application>
+        <file_path/>
+        <instance_id>357f38c1fb3f4e50363cf633beefdce9</instance_id>
+        <instance_name>dev284713</instance_name>
+        <name>sys_transform_map_f69c0157c3a40f500ccab1fdd40131d6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name/&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;x_451445_wrm_ondemandimport&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-04 17:38:49&lt;/sys_created_on&gt;&lt;sys_id&gt;f69c0157c3a40f500ccab1fdd40131d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Workspace Reservation Management" source="x_451445_wrm"&gt;a64abe87c388cb100ccab1fdd4013104&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Workspace Reservation Management"&gt;a64abe87c388cb100ccab1fdd4013104&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_f69c0157c3a40f500ccab1fdd40131d6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-04 17:38:49&lt;/sys_updated_on&gt;&lt;target_table/&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2014624712</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>da7e38c3c3648b500ccab1fdd40131ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-04 17:38:49</sys_created_on>
+        <sys_id>99acc157c3a40f500ccab1fdd4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19df4123d6e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-04 17:38:49</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>59acc15793a40f50950437cc1589c773</update_guid>
+        <update_guid_history>59acc15793a40f50950437cc1589c773:2014624712</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-04 17:44:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>026b557a0f44466e8ad4a927eff95584</sys_id>
+        <sys_metadata>f69c0157c3a40f500ccab1fdd40131d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Workspace Reservation Management" source="x_451445_wrm">a64abe87c388cb100ccab1fdd4013104</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">a64abe87c388cb100ccab1fdd4013104</sys_scope>
+        <sys_scope_delete display_value="">537389c6c0d04727832ef30c60e8d4e9</sys_scope_delete>
+        <sys_update_name>sys_transform_map_f69c0157c3a40f500ccab1fdd40131d6</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_f69c0157c3a40f500ccab1fdd40131d6">99acc157c3a40f500ccab1fdd4013174</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-04 17:44:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
